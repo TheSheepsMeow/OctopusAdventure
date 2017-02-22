@@ -1,6 +1,6 @@
-.gitignore
-
-## Construct 2 ##
-*.uistate.xml
-*.capx.backup*
-*.capx.autosave*
+/node_modules
+/tmp/*
+.grunt
+logs
+*.log
+.DS_Store
