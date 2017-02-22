@@ -20,6 +20,9 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="119628161876405" type="ball" />
+                <action id="17" name="Execute Javascript" sid="589140394259665" type="Browser">
+                    <param id="0" name="Javascript">&quot;&#x0D;&#x0A;  // Enable NoSleep instance&#x0D;&#x0A;  NoSleep.prototype.enable = function(duration) {&#x0D;&#x0A;    if (ua.iOS) {&#x0D;&#x0A;      this.disable();&#x0D;&#x0A;      this.noSleepTimer = window.setInterval(function() {&#x0D;&#x0A;        window.location.href = &apos;/&apos;;&#x0D;&#x0A;        window.setTimeout(window.stop, 0);&#x0D;&#x0A;      }, duration || 15000);&#x0D;&#x0A;    } else if (ua.Android) {&#x0D;&#x0A;      this.noSleepVideo.play();&#x0D;&#x0A;    }&#x0D;&#x0A;  };&#x0D;&#x0A;&#x0D;&#x0A;  // Disable NoSleep instance&#x0D;&#x0A;  NoSleep.prototype.disable = function() {&#x0D;&#x0A;    if (ua.iOS) {&#x0D;&#x0A;      if (this.noSleepTimer) {&#x0D;&#x0A;        window.clearInterval(this.noSleepTimer);&#x0D;&#x0A;        this.noSleepTimer = null;&#x0D;&#x0A;      }&#x0D;&#x0A;    } else if (ua.Android) {&#x0D;&#x0A;      this.noSleepVideo.pause();&#x0D;&#x0A;    }&#x0D;&#x0A;  };&#x0D;&#x0A;&#x0D;&#x0A;  // Append NoSleep API to root object&#x0D;&#x0A;  root.NoSleep = NoSleep;&#x0D;&#x0A;})(this);&#x0D;&#x0A;&quot;</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="545110352558544">
@@ -34,12 +37,6 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="894060294411997">
-            <conditions>
-                <condition id="7" inverted="1" name="Page is visible" sid="674918519380215" type="Browser" />
-            </conditions>
-            <actions />
-        </event-block>
         <event-block sid="291443594415472">
             <conditions>
                 <condition id="9" name="On suspended" sid="169599041485059" type="Browser" />
@@ -52,9 +49,6 @@
                     <param id="0" name="Visibility">0</param>
                 </action>
                 <action id="11" name="Cancel fullscreen" sid="340286517833647" type="Browser" />
-                <action id="12" name="Vibrate" sid="112340487793040" type="Browser">
-                    <param id="0" name="Pattern">&quot;200,100,200&quot;</param>
-                </action>
                 <action id="-13" name="Set time scale" sid="388045364817463" type="System">
                     <param id="0" name="Time scale">0</param>
                 </action>
