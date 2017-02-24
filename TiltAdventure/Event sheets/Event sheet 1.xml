@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="Points" sid="841109568613215" static="0" type="number">0</variable>
         <variable constant="0" name="Start" sid="715200550954948" static="0" type="number">0</variable>
         <event-block sid="199460158419747">
             <conditions>
@@ -12,6 +13,9 @@
                 <action id="18" name="Lock orientation" sid="517322123373293" type="Browser">
                     <param id="0" name="Orientation">0</param>
                 </action>
+                <action id="0" name="Set text" sid="816741913255979" type="Points">
+                    <param id="0" name="Text">Points</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="308145501059992">
@@ -20,22 +24,7 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="119628161876405" type="ball" />
-                <action id="17" name="Execute Javascript" sid="589140394259665" type="Browser">
-                    <param id="0" name="Javascript">&quot;&#x0D;&#x0A;  // Enable NoSleep instance&#x0D;&#x0A;  NoSleep.prototype.enable = function(duration) {&#x0D;&#x0A;    if (ua.iOS) {&#x0D;&#x0A;      this.disable();&#x0D;&#x0A;      this.noSleepTimer = window.setInterval(function() {&#x0D;&#x0A;        window.location.href = &apos;/&apos;;&#x0D;&#x0A;        window.setTimeout(window.stop, 0);&#x0D;&#x0A;      }, duration || 15000);&#x0D;&#x0A;    } else if (ua.Android) {&#x0D;&#x0A;      this.noSleepVideo.play();&#x0D;&#x0A;    }&#x0D;&#x0A;  };&#x0D;&#x0A;&#x0D;&#x0A;  // Disable NoSleep instance&#x0D;&#x0A;  NoSleep.prototype.disable = function() {&#x0D;&#x0A;    if (ua.iOS) {&#x0D;&#x0A;      if (this.noSleepTimer) {&#x0D;&#x0A;        window.clearInterval(this.noSleepTimer);&#x0D;&#x0A;        this.noSleepTimer = null;&#x0D;&#x0A;      }&#x0D;&#x0A;    } else if (ua.Android) {&#x0D;&#x0A;      this.noSleepVideo.pause();&#x0D;&#x0A;    }&#x0D;&#x0A;  };&#x0D;&#x0A;&#x0D;&#x0A;  // Append NoSleep API to root object&#x0D;&#x0A;  root.NoSleep = NoSleep;&#x0D;&#x0A;})(this);&#x0D;&#x0A;&quot;</param>
-                </action>
             </actions>
-            <sub-events>
-                <event-block sid="545110352558544">
-                    <conditions>
-                        <condition id="-20" name="Is on mobile device" sid="288905795712104" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="10" name="Request fullscreen" sid="739435319589546" type="Browser">
-                            <param id="0" name="Mode">2</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
         </event-block>
         <event-block sid="291443594415472">
             <conditions>
@@ -51,6 +40,99 @@
                 <action id="11" name="Cancel fullscreen" sid="340286517833647" type="Browser" />
                 <action id="-13" name="Set time scale" sid="388045364817463" type="System">
                     <param id="0" name="Time scale">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="860446388418197">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="602058514613596" type="ball">
+                    <param id="0" name="Object">wall</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="12" name="Vibrate" sid="135107192019127" type="Browser">
+                    <param id="0" name="Pattern">&quot;10&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="425808234884713">
+            <conditions>
+                <condition id="17" name="On tap object" sid="260897392984006" type="Touch">
+                    <param id="0" name="Object">Obstacle</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="662412879259307" type="Obstacle">
+                    <param id="0" name="Object">Touched</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="458893984901967" type="Obstacle">
+                    <param id="0" name="Object">Spawn</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="340542024845650" type="Obstacle" />
+                <action id="-16" name="Wait" sid="432912092649635" type="System">
+                    <param id="0" name="Seconds">3.0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="918337816507879" type="Spawn">
+                    <param id="0" name="Object">Obstacle</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="226672694758401" type="Obstacle">
+                    <param id="0" name="Animation">&quot;Spawn&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="306900301871909">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="992155255215030" type="ball">
+                    <param id="0" name="Object">Collectible</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="354349707884386" type="Collectible">
+                    <param id="0" name="Object">Collect</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="354654094398984" type="Collectible" />
+                <action id="-10" name="Add to" sid="415484721081868" type="System">
+                    <param id="0" name="Variable">Points</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="803835738105119">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="305052314591211" type="ball">
+                    <param id="0" name="Object">Obstacle</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="ScrollTo" id="0" name="Shake" sid="870469481496093" type="ball">
+                    <param id="0" name="Magnitude">40</param>
+                    <param id="1" name="Duration">0.4</param>
+                    <param id="2" name="Mode">0</param>
+                </action>
+                <action id="12" name="Vibrate" sid="523939831982524" type="Browser">
+                    <param id="0" name="Pattern">&quot;400&quot;</param>
+                </action>
+                <action behavior="Physics" id="27" name="Set enabled" sid="608737080272207" type="ball">
+                    <param id="0" name="Mode">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="375133048881015" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-3" name="Set position" sid="238603593589304" type="ball">
+                    <param id="0" name="X">160</param>
+                    <param id="1" name="Y">240</param>
+                </action>
+                <action behavior="Physics" id="27" name="Set enabled" sid="993559787785937" type="ball">
+                    <param id="0" name="Mode">1</param>
                 </action>
             </actions>
         </event-block>
@@ -75,11 +157,11 @@
                 <action behavior="Physics" id="12" name="Set world gravity" sid="705573410371920" type="ball">
                     <param id="0" name="Gravity">0</param>
                 </action>
+                <action id="12" name="Vibrate" sid="253857334906064" type="Browser">
+                    <param id="0" name="Pattern">&quot;200&quot;</param>
+                </action>
                 <action id="10" name="Request fullscreen" sid="514014402267797" type="Browser">
                     <param id="0" name="Mode">2</param>
-                </action>
-                <action id="12" name="Vibrate" sid="135107192019127" type="Browser">
-                    <param id="0" name="Pattern">&quot;200,100,200&quot;</param>
                 </action>
                 <action id="-15" name="Set visible" sid="856437202103767" type="Start">
                     <param id="0" name="Visibility">0</param>
@@ -109,7 +191,7 @@
                     <param id="0" name="Mode">2</param>
                 </action>
                 <action id="12" name="Vibrate" sid="724929343700690" type="Browser">
-                    <param id="0" name="Pattern">&quot;200,100,200&quot;</param>
+                    <param id="0" name="Pattern">&quot;200&quot;</param>
                 </action>
                 <action id="-15" name="Set visible" sid="712465006919468" type="Start">
                     <param id="0" name="Visibility">0</param>
@@ -141,7 +223,7 @@
                 </action>
                 <action id="11" name="Cancel fullscreen" sid="359486552302079" type="Browser" />
                 <action id="12" name="Vibrate" sid="209078125317291" type="Browser">
-                    <param id="0" name="Pattern">&quot;200,100,200&quot;</param>
+                    <param id="0" name="Pattern">&quot;200&quot;</param>
                 </action>
                 <action id="-13" name="Set time scale" sid="268996288717391" type="System">
                     <param id="0" name="Time scale">0</param>
