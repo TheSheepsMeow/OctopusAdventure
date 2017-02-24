@@ -106,7 +106,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="exit" sid="776075389783840">
+        <object-type name="Pause" sid="776075389783840">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="792713895155359" speed="5">
@@ -340,6 +340,22 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Rotate" sid="843432288304217">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="PointsUI" sid="392987742989940">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="750071623674356" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="InGame" sid="985395513328417">
+            <plugin id="Particles" />
+            <texture />
         </object-type>
     </object-folder>
     <families />

@@ -26,6 +26,46 @@
                 <action id="-9" name="Destroy" sid="119628161876405" type="ball" />
             </actions>
         </event-block>
+        <event-block sid="403228754500310">
+            <conditions>
+                <condition id="16" name="Is portrait/landscape" sid="862794863227945" type="Browser">
+                    <param id="0" name="Orientation">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="280388227736970" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="367471997320442" type="Rotate">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="619641978284581">
+            <conditions>
+                <condition id="16" name="Is portrait/landscape" sid="212542651588782" type="Browser">
+                    <param id="0" name="Orientation">0</param>
+                </condition>
+                <condition id="-9" inverted="1" name="Is visible" sid="882521486037182" type="Start" />
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="523857706580361" type="System">
+                    <param id="0" name="Time scale">1.0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="498322845884789">
+            <conditions>
+                <condition id="16" name="Is portrait/landscape" sid="131477619870194" type="Browser">
+                    <param id="0" name="Orientation">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="869622703504455" type="Rotate">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="291443594415472">
             <conditions>
                 <condition id="9" name="On suspended" sid="169599041485059" type="Browser" />
@@ -34,7 +74,7 @@
                 <action id="-15" name="Set visible" sid="777606807466314" type="Start">
                     <param id="0" name="Visibility">1</param>
                 </action>
-                <action id="-15" name="Set visible" sid="366748092691994" type="exit">
+                <action id="-15" name="Set visible" sid="366748092691994" type="Pause">
                     <param id="0" name="Visibility">0</param>
                 </action>
                 <action id="11" name="Cancel fullscreen" sid="340286517833647" type="Browser" />
@@ -92,6 +132,11 @@
                 <condition id="0" name="On collision with another object" sid="992155255215030" type="ball">
                     <param id="0" name="Object">Collectible</param>
                 </condition>
+                <condition id="-15" name="Pick nearest/furthest" sid="279991719578556" type="InGame">
+                    <param id="0" name="Which">0</param>
+                    <param id="1" name="X">ball.X</param>
+                    <param id="2" name="Y">ball.Y</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="0" name="Spawn another object" sid="354349707884386" type="Collectible">
@@ -104,7 +149,35 @@
                     <param id="0" name="Variable">Points</param>
                     <param id="1" name="Value">1</param>
                 </action>
+                <action id="-9" name="Destroy" sid="139926613597455" type="InGame" />
             </actions>
+            <sub-events>
+                <event-block sid="341936674692500">
+                    <conditions>
+                        <condition id="-10" name="Compare opacity" sid="428522572049584" type="PointsUI">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Opacity">50</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="793774446807544">
+                            <conditions>
+                                <condition id="-15" name="Pick nearest/furthest" sid="380290903817269" type="PointsUI">
+                                    <param id="0" name="Which">0</param>
+                                    <param id="1" name="X">Pause.X</param>
+                                    <param id="2" name="Y">Pause.Y</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="833933351976735" type="PointsUI">
+                                    <param id="0" name="Opacity">100</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="803835738105119">
             <conditions>
@@ -166,12 +239,70 @@
                 <action id="-15" name="Set visible" sid="856437202103767" type="Start">
                     <param id="0" name="Visibility">0</param>
                 </action>
-                <action id="-15" name="Set visible" sid="574097555026446" type="exit">
+                <action id="-15" name="Set visible" sid="574097555026446" type="Pause">
                     <param id="0" name="Visibility">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="525480408648416" type="System">
                     <param id="0" name="Variable">Start</param>
                     <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="302916539771368" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="428856651185415">
+                    <conditions>
+                        <condition id="-10" name="For" sid="470883636008059" type="System">
+                            <param id="0" name="Name">&quot;Bubbles&quot;</param>
+                            <param id="1" name="Start index">1</param>
+                            <param id="2" name="End index">Collectible.Count</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="167934087145972" type="System">
+                            <param id="0" name="Object to create">PointsUI</param>
+                            <param id="1" name="Layer">&quot;UI&quot;</param>
+                            <param id="2" name="X">Pause.X</param>
+                            <param id="3" name="Y">loopindex(&quot;Bubbles&quot;)*25</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="538934713757630">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="163939300919684" type="System">
+                                    <param id="0" name="First value">PointsUI.IID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">loopindex(&quot;Bubbles&quot;)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="874292439009837" type="System">
+                                    <param id="0" name="Seconds">0.05*loopindex(&quot;Bubbles&quot;)</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="661240968980071" type="PointsUI">
+                                    <param id="0" name="Opacity">50</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block disabled="1" sid="838488694406286">
+            <conditions>
+                <condition id="-24" name="For Each (ordered)" sid="587462545027595" type="System">
+                    <param id="0" name="Object">PointsUI</param>
+                    <param id="1" name="Expression">PointsUI.Y</param>
+                    <param id="2" name="Order">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="927356680783463" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="904361600418143" type="PointsUI">
+                    <param id="0" name="Opacity">100</param>
                 </action>
             </actions>
         </event-block>
@@ -180,6 +311,7 @@
                 <condition id="17" name="On tap object" sid="326888949102177" type="Touch">
                     <param id="0" name="Object">Start</param>
                 </condition>
+                <condition id="-9" name="Is visible" sid="345921108310611" type="Start" />
                 <condition id="-14" name="Compare variable" sid="739952717899097" type="System">
                     <param id="0" name="Variable">Start</param>
                     <param id="1" name="Comparison">0</param>
@@ -196,7 +328,7 @@
                 <action id="-15" name="Set visible" sid="712465006919468" type="Start">
                     <param id="0" name="Visibility">0</param>
                 </action>
-                <action id="-15" name="Set visible" sid="218840315558567" type="exit">
+                <action id="-15" name="Set visible" sid="218840315558567" type="Pause">
                     <param id="0" name="Visibility">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="351795371074461" type="System">
@@ -211,14 +343,14 @@
         <event-block sid="958297190452972">
             <conditions>
                 <condition id="17" name="On tap object" sid="313158233510649" type="Touch">
-                    <param id="0" name="Object">exit</param>
+                    <param id="0" name="Object">Pause</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-15" name="Set visible" sid="117053933560010" type="Start">
                     <param id="0" name="Visibility">1</param>
                 </action>
-                <action id="-15" name="Set visible" sid="769791203084688" type="exit">
+                <action id="-15" name="Set visible" sid="769791203084688" type="Pause">
                     <param id="0" name="Visibility">0</param>
                 </action>
                 <action id="11" name="Cancel fullscreen" sid="359486552302079" type="Browser" />
