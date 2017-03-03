@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="Hit" sid="136112183932249" static="0" type="number">0</variable>
         <variable constant="0" name="Points" sid="841109568613215" static="0" type="number">0</variable>
         <variable constant="0" name="Start" sid="715200550954948" static="0" type="number">0</variable>
         <event-block sid="199460158419747">
@@ -24,7 +25,73 @@
                 <condition id="-2" name="On start of layout" sid="463863497675047" type="System" />
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="119628161876405" type="Player" />
+                <action disabled="1" id="-9" name="Destroy" sid="119628161876405" type="Player" />
+                <action behavior="Physics" id="12" name="Set world gravity" sid="438625046397675" type="Player">
+                    <param id="0" name="Gravity">0</param>
+                </action>
+                <action behavior="Physics" id="22" name="Create limited revolute joint" sid="835759595171976" type="Player">
+                    <param id="0" name="This image point">1</param>
+                    <param id="1" name="Object">OctoArm6</param>
+                    <param id="2" name="Lower angle">-45</param>
+                    <param id="3" name="Upper angle">225</param>
+                </action>
+                <action behavior="Physics" id="22" name="Create limited revolute joint" sid="292357639387262" type="Player">
+                    <param id="0" name="This image point">2</param>
+                    <param id="1" name="Object">OctoArm4</param>
+                    <param id="2" name="Lower angle">-15</param>
+                    <param id="3" name="Upper angle">285</param>
+                </action>
+                <action behavior="Physics" id="22" name="Create limited revolute joint" sid="663812596589717" type="Player">
+                    <param id="0" name="This image point">3</param>
+                    <param id="1" name="Object">OctoArm2</param>
+                    <param id="2" name="Lower angle">30</param>
+                    <param id="3" name="Upper angle">330</param>
+                </action>
+                <action behavior="Physics" id="22" name="Create limited revolute joint" sid="993319126000405" type="Player">
+                    <param id="0" name="This image point">4</param>
+                    <param id="1" name="Object">OctoArm3</param>
+                    <param id="2" name="Lower angle">60</param>
+                    <param id="3" name="Upper angle">360</param>
+                </action>
+                <action behavior="Physics" id="22" name="Create limited revolute joint" sid="153177666456297" type="Player">
+                    <param id="0" name="This image point">5</param>
+                    <param id="1" name="Object">OctoArm5</param>
+                    <param id="2" name="Lower angle">115</param>
+                    <param id="3" name="Upper angle">415</param>
+                </action>
+                <action behavior="Physics" id="22" name="Create limited revolute joint" sid="384606982501049" type="Player">
+                    <param id="0" name="This image point">6</param>
+                    <param id="1" name="Object">OctoArm7</param>
+                    <param id="2" name="Lower angle">145</param>
+                    <param id="3" name="Upper angle">445</param>
+                </action>
+                <action behavior="Physics" id="22" name="Create limited revolute joint" sid="754829963093294" type="Player">
+                    <param id="0" name="This image point">7</param>
+                    <param id="1" name="Object">OctoArm8</param>
+                    <param id="2" name="Lower angle">180</param>
+                    <param id="3" name="Upper angle">515</param>
+                </action>
+                <action behavior="Physics" id="22" name="Create limited revolute joint" sid="736915532516116" type="Player">
+                    <param id="0" name="This image point">8</param>
+                    <param id="1" name="Object">OctoArm</param>
+                    <param id="2" name="Lower angle">225</param>
+                    <param id="3" name="Upper angle">565</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="662668033595506" type="Arms">
+                    <param id="0" name="Object">Player</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="171659086814523" type="Arms">
+                    <param id="0" name="Object">Arms</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="251907524554196" type="Arms">
+                    <param id="0" name="Object">wall</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="114664582906063" type="Player">
+                    <param id="0" name="State">0</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="403228754500310">
@@ -243,7 +310,7 @@
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="803835738105119">
+                <event-block sid="625063490914359">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="305052314591211" type="Player">
                             <param id="0" name="Object">Obstacle</param>
@@ -261,18 +328,22 @@
                         <action id="12" name="Vibrate" sid="523939831982524" type="Browser">
                             <param id="0" name="Pattern">&quot;400&quot;</param>
                         </action>
-                        <action behavior="Physics" id="27" name="Set enabled" sid="608737080272207" type="Player">
-                            <param id="0" name="Mode">0</param>
+                        <action behavior="Physics" id="21" name="Set immovable" sid="941710069092905" type="Player">
+                            <param id="0" name="Setting">1</param>
                         </action>
                         <action id="-16" name="Wait" sid="375133048881015" type="System">
                             <param id="0" name="Seconds">1.0</param>
                         </action>
                         <action id="-3" name="Set position" sid="238603593589304" type="Player">
-                            <param id="0" name="X">160</param>
-                            <param id="1" name="Y">240</param>
+                            <param id="0" name="X">PlayerStart.X</param>
+                            <param id="1" name="Y">PlayerStart.Y</param>
                         </action>
-                        <action behavior="Physics" id="27" name="Set enabled" sid="993559787785937" type="Player">
-                            <param id="0" name="Mode">1</param>
+                        <action id="-4" name="Set position to another object" sid="739718599921199" type="Arms">
+                            <param id="0" name="Object">PlayerStart</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                        <action behavior="Physics" id="21" name="Set immovable" sid="470541315751267" type="Player">
+                            <param id="0" name="Setting">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -304,8 +375,8 @@
                         <action id="12" name="Vibrate" sid="364546429709575" type="Browser">
                             <param id="0" name="Pattern">&quot;400&quot;</param>
                         </action>
-                        <action behavior="Physics" id="27" name="Set enabled" sid="234038960024173" type="Player">
-                            <param id="0" name="Mode">0</param>
+                        <action behavior="Physics" id="21" name="Set immovable" sid="617094781606682" type="Player">
+                            <param id="0" name="Setting">1</param>
                         </action>
                         <action id="-16" name="Wait" sid="501976349605460" type="System">
                             <param id="0" name="Seconds">1.0</param>
@@ -314,8 +385,12 @@
                             <param id="0" name="X">Checkpoint.X</param>
                             <param id="1" name="Y">Checkpoint.Y</param>
                         </action>
-                        <action behavior="Physics" id="27" name="Set enabled" sid="142699699053525" type="Player">
-                            <param id="0" name="Mode">1</param>
+                        <action id="-3" name="Set position" sid="226454901525799" type="Arms">
+                            <param id="0" name="X">Checkpoint.X</param>
+                            <param id="1" name="Y">Checkpoint.Y</param>
+                        </action>
+                        <action behavior="Physics" id="21" name="Set immovable" sid="510978093974372" type="Player">
+                            <param id="0" name="Setting">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -336,14 +411,20 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-3" name="Create object" sid="323126771159135" type="System">
-                    <param id="0" name="Object to create">Player</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">PlayerStart.X</param>
-                    <param id="3" name="Y">PlayerStart.Y</param>
+                <action id="-4" name="Set position to another object" sid="323126771159135" type="Player">
+                    <param id="0" name="Object">PlayerStart</param>
+                    <param id="1" name="Image point (optional)">0</param>
                 </action>
-                <action behavior="Physics" id="12" name="Set world gravity" sid="705573410371920" type="Player">
-                    <param id="0" name="Gravity">0</param>
+                <action id="-4" name="Set position to another object" sid="982381628142183" type="Arms">
+                    <param id="0" name="Object">PlayerStart</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="617772752295047" type="Player">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action disabled="1" id="-4" name="Set position to another object" sid="681655702335755" type="Arms">
+                    <param id="0" name="Object">Player</param>
+                    <param id="1" name="Image point (optional)">0</param>
                 </action>
                 <action id="12" name="Vibrate" sid="253857334906064" type="Browser">
                     <param id="0" name="Pattern">&quot;200&quot;</param>
@@ -503,7 +584,7 @@
             <actions>
                 <action behavior="Physics" id="0" name="Apply force" sid="480930200118511" type="Player">
                     <param id="0" name="Force X">0</param>
-                    <param id="1" name="Force Y">3</param>
+                    <param id="1" name="Force Y">30</param>
                     <param id="2" name="Image point">0</param>
                 </action>
             </actions>
@@ -519,7 +600,7 @@
             <actions>
                 <action behavior="Physics" id="0" name="Apply force" sid="467712901326714" type="Player">
                     <param id="0" name="Force X">0</param>
-                    <param id="1" name="Force Y">-3</param>
+                    <param id="1" name="Force Y">-30</param>
                     <param id="2" name="Image point">0</param>
                 </action>
             </actions>
@@ -534,7 +615,7 @@
             </conditions>
             <actions>
                 <action behavior="Physics" id="0" name="Apply force" sid="981941651985700" type="Player">
-                    <param id="0" name="Force X">3</param>
+                    <param id="0" name="Force X">30</param>
                     <param id="1" name="Force Y">0</param>
                     <param id="2" name="Image point">0</param>
                 </action>
@@ -550,7 +631,7 @@
             </conditions>
             <actions>
                 <action behavior="Physics" id="0" name="Apply force" sid="110625719341556" type="Player">
-                    <param id="0" name="Force X">-3</param>
+                    <param id="0" name="Force X">-30</param>
                     <param id="1" name="Force Y">0</param>
                     <param id="2" name="Image point">0</param>
                 </action>
