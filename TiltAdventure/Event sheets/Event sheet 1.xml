@@ -16,6 +16,7 @@
                 <action id="0" name="Set text" sid="816741913255979" type="Points">
                     <param id="0" name="Text">Points</param>
                 </action>
+                <action id="-24" name="Move to top" sid="281843177392385" type="Player" />
             </actions>
         </event-block>
         <event-block sid="308145501059992">
@@ -103,7 +104,7 @@
             </conditions>
             <actions>
                 <action disabled="1" id="0" name="Spawn another object" sid="458893984901967" type="Obstacle">
-                    <param id="0" name="Object">Spawn</param>
+                    <param id="0" name="Object">PlayerStart</param>
                     <param id="1" name="Layer">&quot;Game&quot;</param>
                     <param id="2" name="Image point">0</param>
                 </action>
@@ -125,10 +126,23 @@
                     <param id="0" name="Animation">&quot;Spawn&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action disabled="1" id="0" name="Spawn another object" sid="918337816507879" type="Spawn">
+                <action disabled="1" id="0" name="Spawn another object" sid="918337816507879" type="PlayerStart">
                     <param id="0" name="Object">Obstacle</param>
                     <param id="1" name="Layer">&quot;Game&quot;</param>
                     <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="286356722515672">
+            <conditions>
+                <condition id="14" name="On tap" sid="531114021276242" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="704728058435562" type="System">
+                    <param id="0" name="Object to create">tapParticles</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                    <param id="2" name="X">Touch.X</param>
+                    <param id="3" name="Y">Touch.Y</param>
                 </action>
             </actions>
         </event-block>
@@ -317,13 +331,16 @@
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
                 </condition>
+                <condition id="-19" name="Pick all" sid="660177448843538" type="System">
+                    <param id="0" name="Object">Arms</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-3" name="Create object" sid="323126771159135" type="System">
                     <param id="0" name="Object to create">Player</param>
                     <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">635</param>
-                    <param id="3" name="Y">904</param>
+                    <param id="2" name="X">PlayerStart.X</param>
+                    <param id="3" name="Y">PlayerStart.Y</param>
                 </action>
                 <action behavior="Physics" id="12" name="Set world gravity" sid="705573410371920" type="Player">
                     <param id="0" name="Gravity">0</param>

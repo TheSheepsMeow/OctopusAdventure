@@ -29,54 +29,6 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Player" uid="0">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Physics">
-                            <properties>
-                                <immovable>No</immovable>
-                                <collision-mask>Circle</collision-mask>
-                                <prevent-rotation>No</prevent-rotation>
-                                <density>1.75</density>
-                                <friction>0.75</friction>
-                                <elasticity>0.3</elasticity>
-                                <linear-damping>0</linear-damping>
-                                <angular-damping>0.01</angular-damping>
-                                <bullet>No</bullet>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="BoundToLayout">
-                            <properties>
-                                <bound-by>Edge</bound-by>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="ScrollTo">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>-90</x>
-                        <y>-192</y>
-                        <z>0</z>
-                        <width>32</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="Camera" uid="9">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
@@ -103,6 +55,206 @@
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="OctoArm" uid="124">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-127.750083923</x>
+                        <y>-180.451065063</y>
+                        <z>0</z>
+                        <width>38.598327637</width>
+                        <height>38.598320007</height>
+                        <depth>0</depth>
+                        <hotspotX>0.254000008</hotspotX>
+                        <hotspotY>0.035999998</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="OctoArm2" uid="122">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-141.702087402</x>
+                        <y>-197.683807373</y>
+                        <z>0</z>
+                        <width>38.598316193</width>
+                        <height>38.598320007</height>
+                        <depth>0</depth>
+                        <hotspotX>0.758000016</hotspotX>
+                        <hotspotY>0.034000002</hotspotY>
+                        <angle>1.200229526</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="OctoArm2" uid="125">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-123.054252625</x>
+                        <y>-190.808364868</y>
+                        <z>0</z>
+                        <width>38.598320007</width>
+                        <height>38.598320007</height>
+                        <depth>0</depth>
+                        <hotspotX>0.758000016</hotspotX>
+                        <hotspotY>0.034000002</hotspotY>
+                        <angle>-2.272855997</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="OctoArm3" uid="126">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-141.156646729</x>
+                        <y>-199.969558716</y>
+                        <z>0</z>
+                        <width>35.427936554</width>
+                        <height>35.427932739</height>
+                        <depth>0</depth>
+                        <hotspotX>0.282000005</hotspotX>
+                        <hotspotY>0.041999999</hotspotY>
+                        <angle>-2.740435123</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="OctoArm3" uid="123">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-122.433700562</x>
+                        <y>-184.814834595</y>
+                        <z>0</z>
+                        <width>35.427936554</width>
+                        <height>35.427936554</height>
+                        <depth>0</depth>
+                        <hotspotX>0.282000005</hotspotX>
+                        <hotspotY>0.041999999</hotspotY>
+                        <angle>-0.845665336</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="OctoArm4" uid="127">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-142.43737793</x>
+                        <y>-189.013504028</y>
+                        <z>0</z>
+                        <width>38.598320007</width>
+                        <height>38.598331451</height>
+                        <depth>0</depth>
+                        <hotspotX>0.731999993</hotspotX>
+                        <hotspotY>0.039999999</hotspotY>
+                        <angle>1.144155741</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="OctoArm5" uid="128">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-128.626220703</x>
+                        <y>-199.079803467</y>
+                        <z>0</z>
+                        <width>24.471338272</width>
+                        <height>33.50334549</height>
+                        <depth>0</depth>
+                        <hotspotX>0.649842262</hotspotX>
+                        <hotspotY>0.057603687</hotspotY>
+                        <angle>-2.677925348</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="OctoArm6" uid="129">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-136.710784912</x>
+                        <y>-180.347732544</y>
+                        <z>0</z>
+                        <width>38.598320007</width>
+                        <height>38.598320007</height>
+                        <depth>0</depth>
+                        <hotspotX>0.257999986</hotspotX>
+                        <hotspotY>0.041999999</hotspotY>
+                        <angle>0.486436456</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -1362,7 +1514,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Spawn" uid="30">
+                <instance type="PlayerStart" uid="30">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1372,8 +1524,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-269</x>
-                        <y>235</y>
+                        <x>152</x>
+                        <y>362</y>
                         <z>0</z>
                         <width>37.549964905</width>
                         <height>37.549964905</height>
@@ -4295,6 +4447,93 @@
                         <z>0</z>
                         <width>50</width>
                         <height>50</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="tapParticles" uid="121">
+                    <properties>
+                        <rate>25</rate>
+                        <spray-cone>360</spray-cone>
+                        <type>One-shot</type>
+                        <initial-particle-properties></initial-particle-properties>
+                        <speed>150</speed>
+                        <size>8</size>
+                        <opacity>100</opacity>
+                        <grow-rate>0</grow-rate>
+                        <x-randomiser>0</x-randomiser>
+                        <y-randomiser>0</y-randomiser>
+                        <speed-randomiser->0</speed-randomiser->
+                        <size-randomiser>0</size-randomiser>
+                        <grow-rate-randomiser>20</grow-rate-randomiser>
+                        <particle-lifetime-properties></particle-lifetime-properties>
+                        <acceleration>-150</acceleration>
+                        <gravity>-200</gravity>
+                        <angle-randomiser>0</angle-randomiser>
+                        <speed-randomiser>800</speed-randomiser>
+                        <opacity-randomiser>0</opacity-randomiser>
+                        <destroy-mode>Fade to invisible</destroy-mode>
+                        <timeout>1</timeout>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>103.701797485</x>
+                        <y>-107.710571289</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Player" uid="0">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Physics">
+                            <properties>
+                                <immovable>No</immovable>
+                                <collision-mask>Circle</collision-mask>
+                                <prevent-rotation>No</prevent-rotation>
+                                <density>1.75</density>
+                                <friction>0.75</friction>
+                                <elasticity>0.3</elasticity>
+                                <linear-damping>0</linear-damping>
+                                <angular-damping>0.01</angular-damping>
+                                <bullet>No</bullet>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="BoundToLayout">
+                            <properties>
+                                <bound-by>Edge</bound-by>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="ScrollTo">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-135</x>
+                        <y>-89</y>
+                        <z>0</z>
+                        <width>33</width>
+                        <height>33</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
