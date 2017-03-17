@@ -1164,7 +1164,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Collectible" uid="26">
+                <instance type="Egg" uid="26">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1201,7 +1201,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Collectible" uid="27">
+                <instance type="Egg" uid="27">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1536,7 +1536,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Collectible" uid="39">
+                <instance type="Egg" uid="39">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1724,7 +1724,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Collectible" uid="44">
+                <instance type="Egg" uid="44">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1798,7 +1798,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Collectible" uid="46">
+                <instance type="Egg" uid="46">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1911,7 +1911,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Collectible" uid="49">
+                <instance type="Egg" uid="49">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2059,7 +2059,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Collectible" uid="4">
+                <instance type="Egg" uid="4">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2210,7 +2210,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Collectible" uid="56">
+                <instance type="Egg" uid="56">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2359,7 +2359,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Collectible" uid="62">
+                <instance type="Egg" uid="62">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2621,7 +2621,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Collectible" uid="70">
+                <instance type="Egg" uid="70">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2695,7 +2695,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Collectible" uid="72">
+                <instance type="Egg" uid="72">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2922,7 +2922,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Collectible" uid="89">
+                <instance type="Egg" uid="89">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3147,7 +3147,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Collectible" uid="95">
+                <instance type="Egg" uid="95">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3223,7 +3223,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Collectible" uid="97">
+                <instance type="Egg" uid="97">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3299,7 +3299,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Collectible" uid="99">
+                <instance type="Egg" uid="99">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3449,7 +3449,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Collectible" uid="104">
+                <instance type="Egg" uid="104">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3601,7 +3601,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Collectible" uid="108">
+                <instance type="Egg" uid="108">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3677,7 +3677,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Collectible" uid="110">
+                <instance type="Egg" uid="110">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

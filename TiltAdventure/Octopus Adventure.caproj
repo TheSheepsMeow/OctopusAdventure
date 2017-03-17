@@ -132,7 +132,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Collectible" sid="763370127341762">
+        <object-type name="Egg" sid="763370127341762">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Sine" sid="383763567283268">
