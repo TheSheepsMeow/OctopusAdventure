@@ -408,6 +408,130 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="267669869462581">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="306695984654019" type="Touch">
+                            <param id="0" name="Object">Obstacle2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="587886235473942" type="Audio">
+                            <param id="0" name="Audio file">popObstacle</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="203397675265417" type="Obstacle2">
+                            <param id="0" name="Animation">&quot;Destroy&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="263060818741059" type="Obstacle2">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Sine2" id="0" name="Set active" sid="129266848251952" type="Obstacle2">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="366302638339473" type="System">
+                            <param id="0" name="Seconds">3.0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="648480077592947" type="Obstacle2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="549263658049605" type="Obstacle2">
+                            <param id="0" name="Animation">&quot;Spawn&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="943209955968144">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="830057199860286" type="Obstacle2">
+                            <param id="0" name="Animation">&quot;Destroy&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="478690447376016" type="Obstacle2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="311369580683131">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="400129508147902" type="Obstacle2">
+                            <param id="0" name="Animation">&quot;Spawn&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="0" name="Set active" sid="432678228072111" type="Obstacle2">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Sine2" id="0" name="Set active" sid="467618014166650" type="Obstacle2">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="368056762800294">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="680748547885634" type="Touch">
+                            <param id="0" name="Object">Obstacle3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="160295308966368" type="Audio">
+                            <param id="0" name="Audio file">popObstacle</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="655710151580246" type="Obstacle3">
+                            <param id="0" name="Animation">&quot;Destroy&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="268308023887689" type="Obstacle3">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Sine2" id="0" name="Set active" sid="161500126658749" type="Obstacle3">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="304328536640844" type="System">
+                            <param id="0" name="Seconds">3.0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="471459252239665" type="Obstacle3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="368961015631765" type="Obstacle3">
+                            <param id="0" name="Animation">&quot;Spawn&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="499011366852915">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="169737739006340" type="Obstacle3">
+                            <param id="0" name="Animation">&quot;Destroy&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="154061181294615" type="Obstacle3">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="902063646969540">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="918741384318878" type="Obstacle3">
+                            <param id="0" name="Animation">&quot;Spawn&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="0" name="Set active" sid="579904485979724" type="Obstacle3">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Sine2" id="0" name="Set active" sid="568444436322782" type="Obstacle3">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="413989976840897" title="Checkpoints">
@@ -472,7 +596,7 @@
                                 <action id="0" name="Play" sid="251519593167397" type="Audio">
                                     <param id="0" name="Audio file">hitObstacle</param>
                                     <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
+                                    <param id="3" name="Volume">-10</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                                 <action id="12" name="Vibrate" sid="523939831982524" type="Browser">
@@ -493,6 +617,92 @@
                                     <param id="1" name="Image point (optional)">0</param>
                                 </action>
                                 <action behavior="Physics" id="21" name="Set immovable" sid="470541315751267" type="Player">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="568542949601410">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="429484771617410" type="Player">
+                                    <param id="0" name="Object">Obstacle2</param>
+                                </condition>
+                                <condition id="2" inverted="1" name="Is playing" sid="354620155127170" type="Obstacle2">
+                                    <param id="0" name="Animation">&quot;Destroy&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="ScrollTo" id="0" name="Shake" sid="710913111227524" type="Player">
+                                    <param id="0" name="Magnitude">40</param>
+                                    <param id="1" name="Duration">0.4</param>
+                                    <param id="2" name="Mode">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="389945506521967" type="Audio">
+                                    <param id="0" name="Audio file">hitObstacle</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-10</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="12" name="Vibrate" sid="805522460608628" type="Browser">
+                                    <param id="0" name="Pattern">&quot;400&quot;</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="332461982678889" type="Player">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="726881901342252" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="314899407842600" type="Player">
+                                    <param id="0" name="X">PlayerStart.X</param>
+                                    <param id="1" name="Y">PlayerStart.Y</param>
+                                </action>
+                                <action id="-4" name="Set position to another object" sid="633181296378568" type="Arms">
+                                    <param id="0" name="Object">PlayerStart</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="239430661019576" type="Player">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="678613870955635">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="191867827698396" type="Player">
+                                    <param id="0" name="Object">Obstacle3</param>
+                                </condition>
+                                <condition id="2" inverted="1" name="Is playing" sid="509047276740690" type="Obstacle3">
+                                    <param id="0" name="Animation">&quot;Destroy&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="ScrollTo" id="0" name="Shake" sid="155508362764422" type="Player">
+                                    <param id="0" name="Magnitude">40</param>
+                                    <param id="1" name="Duration">0.4</param>
+                                    <param id="2" name="Mode">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="202049640034083" type="Audio">
+                                    <param id="0" name="Audio file">hitObstacle</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-10</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="12" name="Vibrate" sid="516595770321360" type="Browser">
+                                    <param id="0" name="Pattern">&quot;400&quot;</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="902690586211223" type="Player">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="272511761339874" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="223373380448803" type="Player">
+                                    <param id="0" name="X">PlayerStart.X</param>
+                                    <param id="1" name="Y">PlayerStart.Y</param>
+                                </action>
+                                <action id="-4" name="Set position to another object" sid="164926206424020" type="Arms">
+                                    <param id="0" name="Object">PlayerStart</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="968579421032336" type="Player">
                                     <param id="0" name="Setting">0</param>
                                 </action>
                             </actions>
@@ -525,7 +735,7 @@
                                 <action id="0" name="Play" sid="187669253137649" type="Audio">
                                     <param id="0" name="Audio file">hitObstacle</param>
                                     <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
+                                    <param id="3" name="Volume">-10</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                                 <action id="12" name="Vibrate" sid="364546429709575" type="Browser">
@@ -546,6 +756,92 @@
                                     <param id="1" name="Y">Checkpoint.Y</param>
                                 </action>
                                 <action behavior="Physics" id="21" name="Set immovable" sid="510978093974372" type="Player">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="373746493990116">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="376276559263309" type="Player">
+                                    <param id="0" name="Object">Obstacle2</param>
+                                </condition>
+                                <condition id="2" inverted="1" name="Is playing" sid="984790160454452" type="Obstacle2">
+                                    <param id="0" name="Animation">&quot;Destroy&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="ScrollTo" id="0" name="Shake" sid="493583956057169" type="Player">
+                                    <param id="0" name="Magnitude">40</param>
+                                    <param id="1" name="Duration">0.4</param>
+                                    <param id="2" name="Mode">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="648924974431878" type="Audio">
+                                    <param id="0" name="Audio file">hitObstacle</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-10</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="12" name="Vibrate" sid="493125123406166" type="Browser">
+                                    <param id="0" name="Pattern">&quot;400&quot;</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="600151081452540" type="Player">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="985641993947395" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="518403019955489" type="Player">
+                                    <param id="0" name="X">Checkpoint.X</param>
+                                    <param id="1" name="Y">Checkpoint.Y</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="879645515802027" type="Arms">
+                                    <param id="0" name="X">Checkpoint.X</param>
+                                    <param id="1" name="Y">Checkpoint.Y</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="144214774218947" type="Player">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="713626402128278">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="668619272990518" type="Player">
+                                    <param id="0" name="Object">Obstacle3</param>
+                                </condition>
+                                <condition id="2" inverted="1" name="Is playing" sid="568415774814545" type="Obstacle3">
+                                    <param id="0" name="Animation">&quot;Destroy&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="ScrollTo" id="0" name="Shake" sid="970690976522936" type="Player">
+                                    <param id="0" name="Magnitude">40</param>
+                                    <param id="1" name="Duration">0.4</param>
+                                    <param id="2" name="Mode">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="247687088312068" type="Audio">
+                                    <param id="0" name="Audio file">hitObstacle</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-10</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="12" name="Vibrate" sid="933156461555650" type="Browser">
+                                    <param id="0" name="Pattern">&quot;400&quot;</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="729123345842894" type="Player">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="443696120929253" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="474323413033059" type="Player">
+                                    <param id="0" name="X">Checkpoint.X</param>
+                                    <param id="1" name="Y">Checkpoint.Y</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="756223957221824" type="Arms">
+                                    <param id="0" name="X">Checkpoint.X</param>
+                                    <param id="1" name="Y">Checkpoint.Y</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="598137645260787" type="Player">
                                     <param id="0" name="Setting">0</param>
                                 </action>
                             </actions>
@@ -573,7 +869,7 @@
                                 <action id="0" name="Play" sid="148708837829776" type="Audio">
                                     <param id="0" name="Audio file">hitObstacle</param>
                                     <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
+                                    <param id="3" name="Volume">-10</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                                 <action behavior="ScrollTo" id="0" name="Shake" sid="958509801037065" type="Player">
@@ -603,6 +899,92 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="349308723064643">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="870657580490688" type="Player">
+                                    <param id="0" name="Object">Obstacle2</param>
+                                </condition>
+                                <condition id="2" inverted="1" name="Is playing" sid="321393050524834" type="Obstacle2">
+                                    <param id="0" name="Animation">&quot;Destroy&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="178959722281243" type="Audio">
+                                    <param id="0" name="Audio file">hitObstacle</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-10</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action behavior="ScrollTo" id="0" name="Shake" sid="591914908378153" type="Player">
+                                    <param id="0" name="Magnitude">40</param>
+                                    <param id="1" name="Duration">0.4</param>
+                                    <param id="2" name="Mode">0</param>
+                                </action>
+                                <action id="12" name="Vibrate" sid="999315470393814" type="Browser">
+                                    <param id="0" name="Pattern">&quot;400&quot;</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="236617624938366" type="Player">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="249518931716693" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="825936028033439" type="Player">
+                                    <param id="0" name="X">PlayerStart.X</param>
+                                    <param id="1" name="Y">PlayerStart.Y</param>
+                                </action>
+                                <action id="-4" name="Set position to another object" sid="358955816527780" type="Arms">
+                                    <param id="0" name="Object">PlayerStart</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="571630473993365" type="Player">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="972931001255234">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="950451202965968" type="Player">
+                                    <param id="0" name="Object">Obstacle3</param>
+                                </condition>
+                                <condition id="2" inverted="1" name="Is playing" sid="141814288523202" type="Obstacle3">
+                                    <param id="0" name="Animation">&quot;Destroy&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="180175918376389" type="Audio">
+                                    <param id="0" name="Audio file">hitObstacle</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-10</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action behavior="ScrollTo" id="0" name="Shake" sid="114708188087572" type="Player">
+                                    <param id="0" name="Magnitude">40</param>
+                                    <param id="1" name="Duration">0.4</param>
+                                    <param id="2" name="Mode">0</param>
+                                </action>
+                                <action id="12" name="Vibrate" sid="946380838970904" type="Browser">
+                                    <param id="0" name="Pattern">&quot;400&quot;</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="704878671519573" type="Player">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="689984870969039" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="306582530854621" type="Player">
+                                    <param id="0" name="X">PlayerStart.X</param>
+                                    <param id="1" name="Y">PlayerStart.Y</param>
+                                </action>
+                                <action id="-4" name="Set position to another object" sid="319489879872605" type="Arms">
+                                    <param id="0" name="Object">PlayerStart</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="541734881900029" type="Player">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
                 <event-block sid="106307548393791">
@@ -626,7 +1008,7 @@
                                 <action id="0" name="Play" sid="744895534771613" type="Audio">
                                     <param id="0" name="Audio file">hitObstacle</param>
                                     <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
+                                    <param id="3" name="Volume">-10</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                                 <action behavior="ScrollTo" id="0" name="Shake" sid="543364991167348" type="Player">
@@ -652,6 +1034,92 @@
                                     <param id="1" name="Y">Checkpoint2.Y</param>
                                 </action>
                                 <action behavior="Physics" id="21" name="Set immovable" sid="784038551274637" type="Player">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="704162161968883">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="792790890594433" type="Player">
+                                    <param id="0" name="Object">Obstacle2</param>
+                                </condition>
+                                <condition id="2" inverted="1" name="Is playing" sid="394316836509736" type="Obstacle2">
+                                    <param id="0" name="Animation">&quot;Destroy&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="251306449901013" type="Audio">
+                                    <param id="0" name="Audio file">hitObstacle</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-10</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action behavior="ScrollTo" id="0" name="Shake" sid="950183142221408" type="Player">
+                                    <param id="0" name="Magnitude">40</param>
+                                    <param id="1" name="Duration">0.4</param>
+                                    <param id="2" name="Mode">0</param>
+                                </action>
+                                <action id="12" name="Vibrate" sid="632163525739508" type="Browser">
+                                    <param id="0" name="Pattern">&quot;400&quot;</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="939474742878636" type="Player">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="561896106546901" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="799863399907825" type="Player">
+                                    <param id="0" name="X">Checkpoint2.X</param>
+                                    <param id="1" name="Y">Checkpoint2.Y</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="107196506141185" type="Arms">
+                                    <param id="0" name="X">Checkpoint2.X</param>
+                                    <param id="1" name="Y">Checkpoint2.Y</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="905779878791665" type="Player">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="796698949297382">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="872730760255619" type="Player">
+                                    <param id="0" name="Object">Obstacle3</param>
+                                </condition>
+                                <condition id="2" inverted="1" name="Is playing" sid="831119250251215" type="Obstacle3">
+                                    <param id="0" name="Animation">&quot;Destroy&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="820423347745726" type="Audio">
+                                    <param id="0" name="Audio file">hitObstacle</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-10</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action behavior="ScrollTo" id="0" name="Shake" sid="927400313078812" type="Player">
+                                    <param id="0" name="Magnitude">40</param>
+                                    <param id="1" name="Duration">0.4</param>
+                                    <param id="2" name="Mode">0</param>
+                                </action>
+                                <action id="12" name="Vibrate" sid="472716777144732" type="Browser">
+                                    <param id="0" name="Pattern">&quot;400&quot;</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="683559450566193" type="Player">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="553025491411100" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="770635049077869" type="Player">
+                                    <param id="0" name="X">Checkpoint2.X</param>
+                                    <param id="1" name="Y">Checkpoint2.Y</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="506570652678665" type="Arms">
+                                    <param id="0" name="X">Checkpoint2.X</param>
+                                    <param id="1" name="Y">Checkpoint2.Y</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="147714081398367" type="Player">
                                     <param id="0" name="Setting">0</param>
                                 </action>
                             </actions>
