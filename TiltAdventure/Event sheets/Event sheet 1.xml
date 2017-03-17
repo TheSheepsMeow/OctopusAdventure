@@ -1254,32 +1254,77 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="361517957023531">
+        <event-block sid="276928454922809">
             <conditions>
-                <condition id="-8" name="Compare two values" sid="447449448741558" type="System">
-                    <param id="0" name="First value">Collectible.Count</param>
+                <condition id="-8" name="Compare two values" sid="996195030493464" type="System">
+                    <param id="0" name="First value">LayoutName</param>
                     <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Second value">0</param>
+                    <param id="2" name="Second value">&quot;Normal Level&quot;</param>
                 </condition>
-                <condition id="-4" name="Trigger once while true" sid="286354733312171" type="System" />
             </conditions>
-            <actions>
-                <action id="-16" name="Wait" sid="593425828002658" type="System">
-                    <param id="0" name="Seconds">0.2</param>
-                </action>
-                <action id="-15" name="Set visible" sid="931221238640966" type="Complete">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="0" name="Play" sid="727262929691982" type="Audio">
-                    <param id="0" name="Audio file">complete</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-                <action id="-13" name="Set time scale" sid="157613302544848" type="System">
-                    <param id="0" name="Time scale">0</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="687224857303541">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="951717899397295" type="System">
+                            <param id="0" name="First value">Collectible.Count</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="210624877391281" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="833786551894536" type="Complete">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="737881102574229" type="Audio">
+                            <param id="0" name="Audio file">complete</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="921203662492210" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="968664157837584" type="System">
+                            <param id="0" name="Layout">Hard Level</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="186433239066430">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="666379054893942" type="System">
+                    <param id="0" name="First value">LayoutName</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;Hard Level&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="316993412255647">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="125704518618643" type="System">
+                            <param id="0" name="First value">Collectible.Count</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="811847946216082" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="303493190289456" type="Complete">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="311168562240532" type="Audio">
+                            <param id="0" name="Audio file">complete</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="452227170122944">
             <conditions>
