@@ -355,7 +355,7 @@
                 <event-block sid="425808234884713">
                     <conditions>
                         <condition id="17" name="On tap object" sid="260897392984006" type="Touch">
-                            <param id="0" name="Object">Obstacle</param>
+                            <param id="0" name="Object">ObstacleCoral</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -365,20 +365,20 @@
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
-                        <action id="4" name="Set animation" sid="129121607673030" type="Obstacle">
+                        <action id="4" name="Set animation" sid="129121607673030" type="ObstacleCoral">
                             <param id="0" name="Animation">&quot;Destroy&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action behavior="Sine" id="0" name="Set active" sid="698758842952687" type="Obstacle">
+                        <action behavior="Sine" id="0" name="Set active" sid="698758842952687" type="ObstacleCoral">
                             <param id="0" name="State">0</param>
                         </action>
                         <action id="-16" name="Wait" sid="432912092649635" type="System">
                             <param id="0" name="Seconds">3.0</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="228152715192382" type="Obstacle">
+                        <action id="-15" name="Set visible" sid="228152715192382" type="ObstacleCoral">
                             <param id="0" name="Visibility">1</param>
                         </action>
-                        <action id="4" name="Set animation" sid="226672694758401" type="Obstacle">
+                        <action id="4" name="Set animation" sid="226672694758401" type="ObstacleCoral">
                             <param id="0" name="Animation">&quot;Spawn&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -386,24 +386,24 @@
                 </event-block>
                 <event-block sid="987861229011145">
                     <conditions>
-                        <condition id="4" name="On finished" sid="205992229331457" type="Obstacle">
+                        <condition id="4" name="On finished" sid="205992229331457" type="ObstacleCoral">
                             <param id="0" name="Animation">&quot;Destroy&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-15" name="Set visible" sid="615393171358995" type="Obstacle">
+                        <action id="-15" name="Set visible" sid="615393171358995" type="ObstacleCoral">
                             <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>
                 </event-block>
                 <event-block sid="775329124281141">
                     <conditions>
-                        <condition id="4" name="On finished" sid="517869454863346" type="Obstacle">
+                        <condition id="4" name="On finished" sid="517869454863346" type="ObstacleCoral">
                             <param id="0" name="Animation">&quot;Spawn&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Sine" id="0" name="Set active" sid="801606925031753" type="Obstacle">
+                        <action behavior="Sine" id="0" name="Set active" sid="801606925031753" type="ObstacleCoral">
                             <param id="0" name="State">1</param>
                         </action>
                     </actions>
@@ -411,7 +411,7 @@
                 <event-block sid="267669869462581">
                     <conditions>
                         <condition id="17" name="On tap object" sid="306695984654019" type="Touch">
-                            <param id="0" name="Object">Obstacle2</param>
+                            <param id="0" name="Object">ObstacleBlowfish1</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -421,23 +421,23 @@
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
-                        <action id="4" name="Set animation" sid="203397675265417" type="Obstacle2">
+                        <action id="4" name="Set animation" sid="203397675265417" type="ObstacleBlowfish1">
                             <param id="0" name="Animation">&quot;Destroy&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action behavior="Sine" id="0" name="Set active" sid="263060818741059" type="Obstacle2">
+                        <action behavior="Sine" id="0" name="Set active" sid="263060818741059" type="ObstacleBlowfish1">
                             <param id="0" name="State">0</param>
                         </action>
-                        <action behavior="Sine2" id="0" name="Set active" sid="129266848251952" type="Obstacle2">
+                        <action behavior="Sine2" id="0" name="Set active" sid="129266848251952" type="ObstacleBlowfish1">
                             <param id="0" name="State">0</param>
                         </action>
                         <action id="-16" name="Wait" sid="366302638339473" type="System">
                             <param id="0" name="Seconds">3.0</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="648480077592947" type="Obstacle2">
+                        <action id="-15" name="Set visible" sid="648480077592947" type="ObstacleBlowfish1">
                             <param id="0" name="Visibility">1</param>
                         </action>
-                        <action id="4" name="Set animation" sid="549263658049605" type="Obstacle2">
+                        <action id="4" name="Set animation" sid="549263658049605" type="ObstacleBlowfish1">
                             <param id="0" name="Animation">&quot;Spawn&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -445,27 +445,27 @@
                 </event-block>
                 <event-block sid="943209955968144">
                     <conditions>
-                        <condition id="4" name="On finished" sid="830057199860286" type="Obstacle2">
+                        <condition id="4" name="On finished" sid="830057199860286" type="ObstacleBlowfish1">
                             <param id="0" name="Animation">&quot;Destroy&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-15" name="Set visible" sid="478690447376016" type="Obstacle2">
+                        <action id="-15" name="Set visible" sid="478690447376016" type="ObstacleBlowfish1">
                             <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>
                 </event-block>
                 <event-block sid="311369580683131">
                     <conditions>
-                        <condition id="4" name="On finished" sid="400129508147902" type="Obstacle2">
+                        <condition id="4" name="On finished" sid="400129508147902" type="ObstacleBlowfish1">
                             <param id="0" name="Animation">&quot;Spawn&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Sine" id="0" name="Set active" sid="432678228072111" type="Obstacle2">
+                        <action behavior="Sine" id="0" name="Set active" sid="432678228072111" type="ObstacleBlowfish1">
                             <param id="0" name="State">1</param>
                         </action>
-                        <action behavior="Sine2" id="0" name="Set active" sid="467618014166650" type="Obstacle2">
+                        <action behavior="Sine2" id="0" name="Set active" sid="467618014166650" type="ObstacleBlowfish1">
                             <param id="0" name="State">1</param>
                         </action>
                     </actions>
@@ -473,7 +473,7 @@
                 <event-block sid="368056762800294">
                     <conditions>
                         <condition id="17" name="On tap object" sid="680748547885634" type="Touch">
-                            <param id="0" name="Object">Obstacle3</param>
+                            <param id="0" name="Object">ObstacleBlowfish2</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -483,23 +483,23 @@
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
-                        <action id="4" name="Set animation" sid="655710151580246" type="Obstacle3">
+                        <action id="4" name="Set animation" sid="655710151580246" type="ObstacleBlowfish2">
                             <param id="0" name="Animation">&quot;Destroy&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action behavior="Sine" id="0" name="Set active" sid="268308023887689" type="Obstacle3">
+                        <action behavior="Sine" id="0" name="Set active" sid="268308023887689" type="ObstacleBlowfish2">
                             <param id="0" name="State">0</param>
                         </action>
-                        <action behavior="Sine2" id="0" name="Set active" sid="161500126658749" type="Obstacle3">
+                        <action behavior="Sine2" id="0" name="Set active" sid="161500126658749" type="ObstacleBlowfish2">
                             <param id="0" name="State">0</param>
                         </action>
                         <action id="-16" name="Wait" sid="304328536640844" type="System">
                             <param id="0" name="Seconds">3.0</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="471459252239665" type="Obstacle3">
+                        <action id="-15" name="Set visible" sid="471459252239665" type="ObstacleBlowfish2">
                             <param id="0" name="Visibility">1</param>
                         </action>
-                        <action id="4" name="Set animation" sid="368961015631765" type="Obstacle3">
+                        <action id="4" name="Set animation" sid="368961015631765" type="ObstacleBlowfish2">
                             <param id="0" name="Animation">&quot;Spawn&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -507,27 +507,27 @@
                 </event-block>
                 <event-block sid="499011366852915">
                     <conditions>
-                        <condition id="4" name="On finished" sid="169737739006340" type="Obstacle3">
+                        <condition id="4" name="On finished" sid="169737739006340" type="ObstacleBlowfish2">
                             <param id="0" name="Animation">&quot;Destroy&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-15" name="Set visible" sid="154061181294615" type="Obstacle3">
+                        <action id="-15" name="Set visible" sid="154061181294615" type="ObstacleBlowfish2">
                             <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>
                 </event-block>
                 <event-block sid="902063646969540">
                     <conditions>
-                        <condition id="4" name="On finished" sid="918741384318878" type="Obstacle3">
+                        <condition id="4" name="On finished" sid="918741384318878" type="ObstacleBlowfish2">
                             <param id="0" name="Animation">&quot;Spawn&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Sine" id="0" name="Set active" sid="579904485979724" type="Obstacle3">
+                        <action behavior="Sine" id="0" name="Set active" sid="579904485979724" type="ObstacleBlowfish2">
                             <param id="0" name="State">1</param>
                         </action>
-                        <action behavior="Sine2" id="0" name="Set active" sid="568444436322782" type="Obstacle3">
+                        <action behavior="Sine2" id="0" name="Set active" sid="568444436322782" type="ObstacleBlowfish2">
                             <param id="0" name="State">1</param>
                         </action>
                     </actions>
@@ -581,9 +581,9 @@
                         <event-block sid="625063490914359">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="305052314591211" type="Player">
-                                    <param id="0" name="Object">Obstacle</param>
+                                    <param id="0" name="Object">ObstacleCoral</param>
                                 </condition>
-                                <condition id="2" inverted="1" name="Is playing" sid="817851207805372" type="Obstacle">
+                                <condition id="2" inverted="1" name="Is playing" sid="817851207805372" type="ObstacleCoral">
                                     <param id="0" name="Animation">&quot;Destroy&quot;</param>
                                 </condition>
                             </conditions>
@@ -624,9 +624,9 @@
                         <event-block sid="568542949601410">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="429484771617410" type="Player">
-                                    <param id="0" name="Object">Obstacle2</param>
+                                    <param id="0" name="Object">ObstacleBlowfish1</param>
                                 </condition>
-                                <condition id="2" inverted="1" name="Is playing" sid="354620155127170" type="Obstacle2">
+                                <condition id="2" inverted="1" name="Is playing" sid="354620155127170" type="ObstacleBlowfish1">
                                     <param id="0" name="Animation">&quot;Destroy&quot;</param>
                                 </condition>
                             </conditions>
@@ -667,9 +667,9 @@
                         <event-block sid="678613870955635">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="191867827698396" type="Player">
-                                    <param id="0" name="Object">Obstacle3</param>
+                                    <param id="0" name="Object">ObstacleBlowfish2</param>
                                 </condition>
-                                <condition id="2" inverted="1" name="Is playing" sid="509047276740690" type="Obstacle3">
+                                <condition id="2" inverted="1" name="Is playing" sid="509047276740690" type="ObstacleBlowfish2">
                                     <param id="0" name="Animation">&quot;Destroy&quot;</param>
                                 </condition>
                             </conditions>
@@ -720,9 +720,9 @@
                         <event-block sid="136350397031322">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="456322319604806" type="Player">
-                                    <param id="0" name="Object">Obstacle</param>
+                                    <param id="0" name="Object">ObstacleCoral</param>
                                 </condition>
-                                <condition id="2" inverted="1" name="Is playing" sid="470323655325392" type="Obstacle">
+                                <condition id="2" inverted="1" name="Is playing" sid="470323655325392" type="ObstacleCoral">
                                     <param id="0" name="Animation">&quot;Destroy&quot;</param>
                                 </condition>
                             </conditions>
@@ -763,9 +763,9 @@
                         <event-block sid="373746493990116">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="376276559263309" type="Player">
-                                    <param id="0" name="Object">Obstacle2</param>
+                                    <param id="0" name="Object">ObstacleBlowfish1</param>
                                 </condition>
-                                <condition id="2" inverted="1" name="Is playing" sid="984790160454452" type="Obstacle2">
+                                <condition id="2" inverted="1" name="Is playing" sid="984790160454452" type="ObstacleBlowfish1">
                                     <param id="0" name="Animation">&quot;Destroy&quot;</param>
                                 </condition>
                             </conditions>
@@ -806,9 +806,9 @@
                         <event-block sid="713626402128278">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="668619272990518" type="Player">
-                                    <param id="0" name="Object">Obstacle3</param>
+                                    <param id="0" name="Object">ObstacleBlowfish2</param>
                                 </condition>
-                                <condition id="2" inverted="1" name="Is playing" sid="568415774814545" type="Obstacle3">
+                                <condition id="2" inverted="1" name="Is playing" sid="568415774814545" type="ObstacleBlowfish2">
                                     <param id="0" name="Animation">&quot;Destroy&quot;</param>
                                 </condition>
                             </conditions>
@@ -859,9 +859,9 @@
                         <event-block sid="701695994179928">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="878698637267439" type="Player">
-                                    <param id="0" name="Object">Obstacle</param>
+                                    <param id="0" name="Object">ObstacleCoral</param>
                                 </condition>
-                                <condition id="2" inverted="1" name="Is playing" sid="190932698136007" type="Obstacle">
+                                <condition id="2" inverted="1" name="Is playing" sid="190932698136007" type="ObstacleCoral">
                                     <param id="0" name="Animation">&quot;Destroy&quot;</param>
                                 </condition>
                             </conditions>
@@ -902,9 +902,9 @@
                         <event-block sid="349308723064643">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="870657580490688" type="Player">
-                                    <param id="0" name="Object">Obstacle2</param>
+                                    <param id="0" name="Object">ObstacleBlowfish1</param>
                                 </condition>
-                                <condition id="2" inverted="1" name="Is playing" sid="321393050524834" type="Obstacle2">
+                                <condition id="2" inverted="1" name="Is playing" sid="321393050524834" type="ObstacleBlowfish1">
                                     <param id="0" name="Animation">&quot;Destroy&quot;</param>
                                 </condition>
                             </conditions>
@@ -945,9 +945,9 @@
                         <event-block sid="972931001255234">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="950451202965968" type="Player">
-                                    <param id="0" name="Object">Obstacle3</param>
+                                    <param id="0" name="Object">ObstacleBlowfish2</param>
                                 </condition>
-                                <condition id="2" inverted="1" name="Is playing" sid="141814288523202" type="Obstacle3">
+                                <condition id="2" inverted="1" name="Is playing" sid="141814288523202" type="ObstacleBlowfish2">
                                     <param id="0" name="Animation">&quot;Destroy&quot;</param>
                                 </condition>
                             </conditions>
@@ -998,9 +998,9 @@
                         <event-block sid="318863674422939">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="653855103414251" type="Player">
-                                    <param id="0" name="Object">Obstacle</param>
+                                    <param id="0" name="Object">ObstacleCoral</param>
                                 </condition>
-                                <condition id="2" inverted="1" name="Is playing" sid="548381039340894" type="Obstacle">
+                                <condition id="2" inverted="1" name="Is playing" sid="548381039340894" type="ObstacleCoral">
                                     <param id="0" name="Animation">&quot;Destroy&quot;</param>
                                 </condition>
                             </conditions>
@@ -1041,9 +1041,9 @@
                         <event-block sid="704162161968883">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="792790890594433" type="Player">
-                                    <param id="0" name="Object">Obstacle2</param>
+                                    <param id="0" name="Object">ObstacleBlowfish1</param>
                                 </condition>
-                                <condition id="2" inverted="1" name="Is playing" sid="394316836509736" type="Obstacle2">
+                                <condition id="2" inverted="1" name="Is playing" sid="394316836509736" type="ObstacleBlowfish1">
                                     <param id="0" name="Animation">&quot;Destroy&quot;</param>
                                 </condition>
                             </conditions>
@@ -1084,9 +1084,9 @@
                         <event-block sid="796698949297382">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="872730760255619" type="Player">
-                                    <param id="0" name="Object">Obstacle3</param>
+                                    <param id="0" name="Object">ObstacleBlowfish2</param>
                                 </condition>
-                                <condition id="2" inverted="1" name="Is playing" sid="831119250251215" type="Obstacle3">
+                                <condition id="2" inverted="1" name="Is playing" sid="831119250251215" type="ObstacleBlowfish2">
                                     <param id="0" name="Animation">&quot;Destroy&quot;</param>
                                 </condition>
                             </conditions>

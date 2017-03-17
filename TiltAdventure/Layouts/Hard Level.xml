@@ -1238,7 +1238,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="28">
+                <instance type="ObstacleCoral" uid="28">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1314,7 +1314,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="33">
+                <instance type="ObstacleCoral" uid="33">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1351,7 +1351,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="34">
+                <instance type="ObstacleCoral" uid="34">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1388,7 +1388,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="35">
+                <instance type="ObstacleCoral" uid="35">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1425,7 +1425,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="36">
+                <instance type="ObstacleCoral" uid="36">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1462,7 +1462,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="37">
+                <instance type="ObstacleCoral" uid="37">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1499,7 +1499,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="38">
+                <instance type="ObstacleCoral" uid="38">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1573,7 +1573,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="40">
+                <instance type="ObstacleCoral" uid="40">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1761,7 +1761,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="45">
+                <instance type="ObstacleCoral" uid="45">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1948,7 +1948,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="50">
+                <instance type="ObstacleCoral" uid="50">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1985,7 +1985,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="51">
+                <instance type="ObstacleCoral" uid="51">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2022,7 +2022,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="52">
+                <instance type="ObstacleCoral" uid="52">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2247,7 +2247,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="57">
+                <instance type="ObstacleCoral" uid="57">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2284,7 +2284,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="58">
+                <instance type="ObstacleCoral" uid="58">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2396,7 +2396,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="64">
+                <instance type="ObstacleCoral" uid="64">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2433,7 +2433,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="65">
+                <instance type="ObstacleCoral" uid="65">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2584,7 +2584,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="69">
+                <instance type="ObstacleCoral" uid="69">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2658,7 +2658,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="71">
+                <instance type="ObstacleCoral" uid="71">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2808,7 +2808,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="75">
+                <instance type="ObstacleCoral" uid="75">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2959,7 +2959,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="90">
+                <instance type="ObstacleCoral" uid="90">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2996,7 +2996,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="91">
+                <instance type="ObstacleCoral" uid="91">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3033,7 +3033,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="92">
+                <instance type="ObstacleCoral" uid="92">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3336,7 +3336,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="101">
+                <instance type="ObstacleCoral" uid="101">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3373,7 +3373,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="102">
+                <instance type="ObstacleCoral" uid="102">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3714,7 +3714,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="111">
+                <instance type="ObstacleCoral" uid="111">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3751,7 +3751,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="112">
+                <instance type="ObstacleCoral" uid="112">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3788,7 +3788,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="113">
+                <instance type="ObstacleCoral" uid="113">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3825,7 +3825,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="114">
+                <instance type="ObstacleCoral" uid="114">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3862,7 +3862,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="115">
+                <instance type="ObstacleCoral" uid="115">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3899,7 +3899,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="116">
+                <instance type="ObstacleCoral" uid="116">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3936,7 +3936,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="117">
+                <instance type="ObstacleCoral" uid="117">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3973,7 +3973,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="118">
+                <instance type="ObstacleCoral" uid="118">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -4418,7 +4418,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle3" uid="155">
+                <instance type="ObstacleBlowfish2" uid="155">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -4468,7 +4468,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle2" uid="31">
+                <instance type="ObstacleBlowfish1" uid="31">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -4518,7 +4518,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle2" uid="100">
+                <instance type="ObstacleBlowfish1" uid="100">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

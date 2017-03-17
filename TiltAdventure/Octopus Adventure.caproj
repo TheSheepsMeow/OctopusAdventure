@@ -164,7 +164,7 @@
             <plugin id="Spritefont2" />
             <texture />
         </object-type>
-        <object-type name="Obstacle" sid="542139469420118">
+        <object-type name="ObstacleCoral" sid="542139469420118">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Sine" sid="293525713821642">
@@ -693,7 +693,7 @@
         <object-type name="Audio" sid="571190207376071">
             <plugin id="Audio" />
         </object-type>
-        <object-type name="Obstacle2" sid="873089639679539">
+        <object-type name="ObstacleBlowfish1" sid="873089639679539">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Sine" sid="937654487918042">
@@ -1012,7 +1012,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Obstacle3" sid="481476229678104">
+        <object-type name="ObstacleBlowfish2" sid="481476229678104">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Sine" sid="690655068453050">

@@ -421,8 +421,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>103.701797485</x>
-                        <y>-107.710571289</y>
+                        <x>104</x>
+                        <y>-143</y>
                         <z>0</z>
                         <width>128</width>
                         <height>128</height>
@@ -1638,7 +1638,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="163">
+                <instance type="ObstacleCoral" uid="163">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1675,7 +1675,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="142">
+                <instance type="ObstacleCoral" uid="142">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1712,7 +1712,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="143">
+                <instance type="ObstacleCoral" uid="143">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1749,7 +1749,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle2" uid="135">
+                <instance type="ObstacleBlowfish1" uid="135">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1799,7 +1799,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle2" uid="136">
+                <instance type="ObstacleBlowfish1" uid="136">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1849,7 +1849,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle2" uid="137">
+                <instance type="ObstacleBlowfish1" uid="137">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1899,7 +1899,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle3" uid="144">
+                <instance type="ObstacleBlowfish2" uid="144">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1949,7 +1949,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle3" uid="149">
+                <instance type="ObstacleBlowfish2" uid="149">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1999,7 +1999,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle3" uid="150">
+                <instance type="ObstacleBlowfish2" uid="150">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2049,7 +2049,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="170">
+                <instance type="ObstacleCoral" uid="170">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2276,7 +2276,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle2" uid="60">
+                <instance type="ObstacleBlowfish1" uid="60">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2326,7 +2326,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle2" uid="175">
+                <instance type="ObstacleBlowfish1" uid="175">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2528,7 +2528,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle2" uid="180">
+                <instance type="ObstacleBlowfish1" uid="180">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2578,7 +2578,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle2" uid="181">
+                <instance type="ObstacleBlowfish1" uid="181">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2628,7 +2628,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="182">
+                <instance type="ObstacleCoral" uid="182">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2665,7 +2665,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Obstacle" uid="183">
+                <instance type="ObstacleCoral" uid="183">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
