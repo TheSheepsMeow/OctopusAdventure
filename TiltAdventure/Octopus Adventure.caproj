@@ -18,6 +18,7 @@
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
@@ -494,7 +495,7 @@
         </object-type>
         <object-type name="Rotate" sid="843432288304217">
             <plugin id="Spritefont2" />
-            <texture />
+            <texture original-source="C:\Users\Josiah\Desktop\Internship\SpriteFont_NovaMono_Regular_(36)_[0,3,0,0]_27x49.png" />
         </object-type>
         <object-type name="PointsUI" sid="392987742989940">
             <plugin id="Sprite" />
@@ -688,7 +689,7 @@
         </object-type>
         <object-type name="Complete" sid="617136303580143">
             <plugin id="Spritefont2" />
-            <texture />
+            <texture original-source="C:\Users\Josiah\Desktop\Internship\SpriteFont_NovaMono_Regular_(36)_[0,3,0,0]_27x49.png" />
         </object-type>
         <object-type name="Audio" sid="571190207376071">
             <plugin id="Audio" />
@@ -1330,6 +1331,15 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="CheckpointText" sid="467626708976538">
+            <plugin id="Spritefont2" />
+            <behaviors>
+                <behavior-type name="Fade" sid="830593031858621">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Josiah\Desktop\Internship\SpriteFont_NovaMono_Regular_(36)_[0,3,0,0]_27x49.png" />
         </object-type>
     </object-folder>
     <families>

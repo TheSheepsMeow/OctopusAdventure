@@ -83,6 +83,31 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="Checkpoint" uid="185">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <checkpoint>false</checkpoint>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1082</x>
+                        <y>59</y>
+                        <z>0</z>
+                        <width>140</width>
+                        <height>112</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -2806,11 +2831,11 @@
                 </instance>
                 <instance type="Rotate" uid="256">
                     <properties>
-                        <character-width>16</character-width>
-                        <character-height>16</character-height>
+                        <character-width>27</character-width>
+                        <character-height>49</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
                         <text>Rotate Device</text>
-                        <scale>3</scale>
+                        <scale>1.5</scale>
                         <initial-visibility>Invisible</initial-visibility>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -2858,11 +2883,11 @@
                 </instance>
                 <instance type="Complete" uid="258">
                     <properties>
-                        <character-width>16</character-width>
-                        <character-height>16</character-height>
+                        <character-width>27</character-width>
+                        <character-height>49</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
                         <text>Level Complete!</text>
-                        <scale>1.25</scale>
+                        <scale>1</scale>
                         <initial-visibility>Invisible</initial-visibility>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>

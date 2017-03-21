@@ -536,10 +536,24 @@
         </event-group>
         <event-group description="" sid="413989976840897" title="Checkpoints">
             <sub-events>
+                <event-block sid="202381203331798">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="452065733372992" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="322319426405145" type="CheckpointText">
+                            <param id="0" name="X">Self.X</param>
+                            <param id="1" name="Y">lerp(Self.Y, Self.Y - 10, 0.03)</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="799180590371772">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="509569803268082" type="Player">
                             <param id="0" name="Object">Checkpoint</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="481767942148637" type="Checkpoint">
+                            <param id="0" name="Instance variable">checkpoint</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -551,12 +565,20 @@
                             <param id="0" name="Instance variable">checkpoint</param>
                             <param id="1" name="Value">0</param>
                         </action>
+                        <action id="0" name="Spawn another object" sid="576106506442998" type="Checkpoint">
+                            <param id="0" name="Object">CheckpointText</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="531828783041038">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="838458534052598" type="Player">
                             <param id="0" name="Object">Checkpoint2</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="438103705306663" type="Checkpoint2">
+                            <param id="0" name="Instance variable">checkpoint</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -568,11 +590,19 @@
                             <param id="0" name="Instance variable">checkpoint</param>
                             <param id="1" name="Value">0</param>
                         </action>
+                        <action id="0" name="Spawn another object" sid="241139980158547" type="Checkpoint2">
+                            <param id="0" name="Object">CheckpointText</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="161022416413126">
                     <conditions>
                         <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="545270187685804" type="Checkpoint">
+                            <param id="0" name="Instance variable">checkpoint</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="136745948270114" type="Checkpoint2">
                             <param id="0" name="Instance variable">checkpoint</param>
                         </condition>
                     </conditions>
@@ -714,6 +744,9 @@
                         <condition id="-8" name="Is boolean instance variable set" sid="666875786033023" type="Checkpoint">
                             <param id="0" name="Instance variable">checkpoint</param>
                         </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="532139988409840" type="Checkpoint2">
+                            <param id="0" name="Instance variable">checkpoint</param>
+                        </condition>
                     </conditions>
                     <actions />
                     <sub-events>
@@ -848,148 +881,12 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="712519444406893">
-                    <conditions>
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="374646588721712" type="Checkpoint2">
-                            <param id="0" name="Instance variable">checkpoint</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="701695994179928">
-                            <conditions>
-                                <condition id="0" name="On collision with another object" sid="878698637267439" type="Player">
-                                    <param id="0" name="Object">ObstacleCoral</param>
-                                </condition>
-                                <condition id="2" inverted="1" name="Is playing" sid="190932698136007" type="ObstacleCoral">
-                                    <param id="0" name="Animation">&quot;Destroy&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Play" sid="148708837829776" type="Audio">
-                                    <param id="0" name="Audio file">hitObstacle</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">-10</param>
-                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action behavior="ScrollTo" id="0" name="Shake" sid="958509801037065" type="Player">
-                                    <param id="0" name="Magnitude">40</param>
-                                    <param id="1" name="Duration">0.4</param>
-                                    <param id="2" name="Mode">0</param>
-                                </action>
-                                <action id="12" name="Vibrate" sid="389969590914162" type="Browser">
-                                    <param id="0" name="Pattern">&quot;400&quot;</param>
-                                </action>
-                                <action behavior="Physics" id="21" name="Set immovable" sid="940505189915236" type="Player">
-                                    <param id="0" name="Setting">1</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="691849871332760" type="System">
-                                    <param id="0" name="Seconds">1.0</param>
-                                </action>
-                                <action id="-3" name="Set position" sid="187513013464481" type="Player">
-                                    <param id="0" name="X">PlayerStart.X</param>
-                                    <param id="1" name="Y">PlayerStart.Y</param>
-                                </action>
-                                <action id="-4" name="Set position to another object" sid="409031330886662" type="Arms">
-                                    <param id="0" name="Object">PlayerStart</param>
-                                    <param id="1" name="Image point (optional)">0</param>
-                                </action>
-                                <action behavior="Physics" id="21" name="Set immovable" sid="940157964783700" type="Player">
-                                    <param id="0" name="Setting">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="349308723064643">
-                            <conditions>
-                                <condition id="0" name="On collision with another object" sid="870657580490688" type="Player">
-                                    <param id="0" name="Object">ObstacleBlowfish1</param>
-                                </condition>
-                                <condition id="2" inverted="1" name="Is playing" sid="321393050524834" type="ObstacleBlowfish1">
-                                    <param id="0" name="Animation">&quot;Destroy&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Play" sid="178959722281243" type="Audio">
-                                    <param id="0" name="Audio file">hitObstacle</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">-10</param>
-                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action behavior="ScrollTo" id="0" name="Shake" sid="591914908378153" type="Player">
-                                    <param id="0" name="Magnitude">40</param>
-                                    <param id="1" name="Duration">0.4</param>
-                                    <param id="2" name="Mode">0</param>
-                                </action>
-                                <action id="12" name="Vibrate" sid="999315470393814" type="Browser">
-                                    <param id="0" name="Pattern">&quot;400&quot;</param>
-                                </action>
-                                <action behavior="Physics" id="21" name="Set immovable" sid="236617624938366" type="Player">
-                                    <param id="0" name="Setting">1</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="249518931716693" type="System">
-                                    <param id="0" name="Seconds">1.0</param>
-                                </action>
-                                <action id="-3" name="Set position" sid="825936028033439" type="Player">
-                                    <param id="0" name="X">PlayerStart.X</param>
-                                    <param id="1" name="Y">PlayerStart.Y</param>
-                                </action>
-                                <action id="-4" name="Set position to another object" sid="358955816527780" type="Arms">
-                                    <param id="0" name="Object">PlayerStart</param>
-                                    <param id="1" name="Image point (optional)">0</param>
-                                </action>
-                                <action behavior="Physics" id="21" name="Set immovable" sid="571630473993365" type="Player">
-                                    <param id="0" name="Setting">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="972931001255234">
-                            <conditions>
-                                <condition id="0" name="On collision with another object" sid="950451202965968" type="Player">
-                                    <param id="0" name="Object">ObstacleBlowfish2</param>
-                                </condition>
-                                <condition id="2" inverted="1" name="Is playing" sid="141814288523202" type="ObstacleBlowfish2">
-                                    <param id="0" name="Animation">&quot;Destroy&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Play" sid="180175918376389" type="Audio">
-                                    <param id="0" name="Audio file">hitObstacle</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">-10</param>
-                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action behavior="ScrollTo" id="0" name="Shake" sid="114708188087572" type="Player">
-                                    <param id="0" name="Magnitude">40</param>
-                                    <param id="1" name="Duration">0.4</param>
-                                    <param id="2" name="Mode">0</param>
-                                </action>
-                                <action id="12" name="Vibrate" sid="946380838970904" type="Browser">
-                                    <param id="0" name="Pattern">&quot;400&quot;</param>
-                                </action>
-                                <action behavior="Physics" id="21" name="Set immovable" sid="704878671519573" type="Player">
-                                    <param id="0" name="Setting">1</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="689984870969039" type="System">
-                                    <param id="0" name="Seconds">1.0</param>
-                                </action>
-                                <action id="-3" name="Set position" sid="306582530854621" type="Player">
-                                    <param id="0" name="X">PlayerStart.X</param>
-                                    <param id="1" name="Y">PlayerStart.Y</param>
-                                </action>
-                                <action id="-4" name="Set position to another object" sid="319489879872605" type="Arms">
-                                    <param id="0" name="Object">PlayerStart</param>
-                                    <param id="1" name="Image point (optional)">0</param>
-                                </action>
-                                <action behavior="Physics" id="21" name="Set immovable" sid="541734881900029" type="Player">
-                                    <param id="0" name="Setting">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
                 <event-block sid="106307548393791">
                     <conditions>
                         <condition id="-8" name="Is boolean instance variable set" sid="570835646174343" type="Checkpoint2">
+                            <param id="0" name="Instance variable">checkpoint</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="255568844694014" type="Checkpoint">
                             <param id="0" name="Instance variable">checkpoint</param>
                         </condition>
                     </conditions>
