@@ -269,53 +269,85 @@
                         <action behavior="Physics" id="12" name="Set world gravity" sid="438625046397675" type="Player">
                             <param id="0" name="Gravity">0</param>
                         </action>
-                        <action behavior="Physics" id="22" name="Create limited revolute joint" sid="835759595171976" type="Player">
+                        <action behavior="Physics" disabled="1" id="22" name="Create limited revolute joint" sid="835759595171976" type="Player">
                             <param id="0" name="This image point">1</param>
                             <param id="1" name="Object">OctoArm6</param>
                             <param id="2" name="Lower angle">-45</param>
                             <param id="3" name="Upper angle">225</param>
                         </action>
-                        <action behavior="Physics" id="22" name="Create limited revolute joint" sid="292357639387262" type="Player">
+                        <action behavior="Physics" disabled="1" id="22" name="Create limited revolute joint" sid="292357639387262" type="Player">
                             <param id="0" name="This image point">2</param>
                             <param id="1" name="Object">OctoArm4</param>
                             <param id="2" name="Lower angle">-15</param>
                             <param id="3" name="Upper angle">285</param>
                         </action>
-                        <action behavior="Physics" id="22" name="Create limited revolute joint" sid="663812596589717" type="Player">
+                        <action behavior="Physics" disabled="1" id="22" name="Create limited revolute joint" sid="663812596589717" type="Player">
                             <param id="0" name="This image point">3</param>
                             <param id="1" name="Object">OctoArm2</param>
                             <param id="2" name="Lower angle">30</param>
                             <param id="3" name="Upper angle">330</param>
                         </action>
-                        <action behavior="Physics" id="22" name="Create limited revolute joint" sid="993319126000405" type="Player">
+                        <action behavior="Physics" disabled="1" id="22" name="Create limited revolute joint" sid="993319126000405" type="Player">
                             <param id="0" name="This image point">4</param>
                             <param id="1" name="Object">OctoArm3</param>
                             <param id="2" name="Lower angle">60</param>
                             <param id="3" name="Upper angle">360</param>
                         </action>
-                        <action behavior="Physics" id="22" name="Create limited revolute joint" sid="153177666456297" type="Player">
+                        <action behavior="Physics" disabled="1" id="22" name="Create limited revolute joint" sid="153177666456297" type="Player">
                             <param id="0" name="This image point">5</param>
                             <param id="1" name="Object">OctoArm5</param>
                             <param id="2" name="Lower angle">115</param>
                             <param id="3" name="Upper angle">415</param>
                         </action>
-                        <action behavior="Physics" id="22" name="Create limited revolute joint" sid="384606982501049" type="Player">
+                        <action behavior="Physics" disabled="1" id="22" name="Create limited revolute joint" sid="384606982501049" type="Player">
                             <param id="0" name="This image point">6</param>
                             <param id="1" name="Object">OctoArm7</param>
                             <param id="2" name="Lower angle">145</param>
                             <param id="3" name="Upper angle">445</param>
                         </action>
-                        <action behavior="Physics" id="22" name="Create limited revolute joint" sid="754829963093294" type="Player">
+                        <action behavior="Physics" disabled="1" id="22" name="Create limited revolute joint" sid="754829963093294" type="Player">
                             <param id="0" name="This image point">7</param>
                             <param id="1" name="Object">OctoArm8</param>
                             <param id="2" name="Lower angle">180</param>
                             <param id="3" name="Upper angle">515</param>
                         </action>
-                        <action behavior="Physics" id="22" name="Create limited revolute joint" sid="736915532516116" type="Player">
+                        <action behavior="Physics" disabled="1" id="22" name="Create limited revolute joint" sid="736915532516116" type="Player">
                             <param id="0" name="This image point">8</param>
                             <param id="1" name="Object">OctoArm</param>
                             <param id="2" name="Lower angle">225</param>
                             <param id="3" name="Upper angle">565</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="434051261427843" type="OctoArm">
+                            <param id="0" name="Pin to">Player</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="869631683501440" type="OctoArm2">
+                            <param id="0" name="Pin to">Player</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="652497710358546" type="OctoArm3">
+                            <param id="0" name="Pin to">Player</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="522189650262009" type="OctoArm4">
+                            <param id="0" name="Pin to">Player</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="921330968215606" type="OctoArm5">
+                            <param id="0" name="Pin to">Player</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="826311059083127" type="OctoArm6">
+                            <param id="0" name="Pin to">Player</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="409646881661470" type="OctoArm7">
+                            <param id="0" name="Pin to">Player</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="848613184563566" type="OctoArm8">
+                            <param id="0" name="Pin to">Player</param>
+                            <param id="1" name="Mode">1</param>
                         </action>
                         <action behavior="Physics" id="23" name="Enable/disable collisions" sid="662668033595506" type="Arms">
                             <param id="0" name="Object">Player</param>
@@ -359,6 +391,7 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action behavior="Fade" id="1" name="Start fade" sid="117858856721736" type="tapGesture" />
                         <action id="0" name="Play" sid="420640437148685" type="Audio">
                             <param id="0" name="Audio file">popObstacle</param>
                             <param id="2" name="Loop">0</param>
@@ -415,6 +448,7 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action behavior="Fade" id="1" name="Start fade" sid="374080185717471" type="tapGesture" />
                         <action id="0" name="Play" sid="587886235473942" type="Audio">
                             <param id="0" name="Audio file">popObstacle</param>
                             <param id="2" name="Loop">0</param>
@@ -477,6 +511,7 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action behavior="Fade" id="1" name="Start fade" sid="599303603939763" type="tapGesture" />
                         <action id="0" name="Play" sid="160295308966368" type="Audio">
                             <param id="0" name="Audio file">popObstacle</param>
                             <param id="2" name="Loop">0</param>
@@ -1151,12 +1186,36 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="567056761538369" title="Tutorial">
+            <sub-events>
+                <event-block sid="513295997767971">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="701852084096671" type="Player">
+                            <param id="0" name="Object">Tutorial1</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="962755480960988" type="Tutorial1">
+                            <param id="0" name="Instance variable">tutorial</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="126886059256368" type="Tutorial1">
+                            <param id="0" name="Instance variable">tutorial</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="280321666009994" type="TutorialText">
+                            <param id="0" name="Text">&quot;Collect all of the baby eggs!&quot;</param>
+                        </action>
+                        <action behavior="Fade" id="0" name="Restart fade" sid="703440554461064" type="TutorialText" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-block sid="276928454922809">
             <conditions>
                 <condition id="-8" name="Compare two values" sid="996195030493464" type="System">
                     <param id="0" name="First value">LayoutName</param>
                     <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Second value">&quot;Normal Level&quot;</param>
+                    <param id="2" name="Second value">&quot;Tutorial&quot;</param>
                 </condition>
             </conditions>
             <actions />
@@ -1185,6 +1244,46 @@
                         </action>
                         <action id="-21" name="Reset global variables" sid="663367318891496" type="System" />
                         <action id="-2" name="Go to layout" sid="968664157837584" type="System">
+                            <param id="0" name="Layout">Normal Level</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="939842879134453">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="804125093924106" type="System">
+                    <param id="0" name="First value">LayoutName</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;Normal Level&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="982194774918975">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="250978338271695" type="System">
+                            <param id="0" name="First value">Egg.Count</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="383187513820466" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="278239772255375" type="Complete">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="230421390009609" type="Audio">
+                            <param id="0" name="Audio file">complete</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="393374981296415" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="206078713628619" type="System" />
+                        <action id="-2" name="Go to layout" sid="531864210638408" type="System">
                             <param id="0" name="Layout">Hard Level</param>
                         </action>
                     </actions>
@@ -1219,6 +1318,16 @@
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="781281902337957" type="Complete">
+                            <param id="0" name="Text">&quot;You found all of the eggs!&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="494538898212999" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="161341166536291" type="System" />
+                        <action id="-2" name="Go to layout" sid="488947393024076" type="System">
+                            <param id="0" name="Layout">Tutorial</param>
                         </action>
                     </actions>
                 </event-block>

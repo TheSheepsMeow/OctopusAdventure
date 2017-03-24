@@ -20,6 +20,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
     </used-behaviors>
@@ -61,16 +62,36 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="636222976235167" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <image-point name="Imagepoint 1" x="0.5" y="0.878788" />
-                        <image-point name="Imagepoint 2" x="0.212121" y="0.80303" />
-                        <image-point name="Imagepoint 3" x="0.106061" y="0.5" />
-                        <image-point name="Imagepoint 4" x="0.227273" y="0.212121" />
-                        <image-point name="Imagepoint 5" x="0.484848" y="0.0909091" />
-                        <image-point name="Imagepoint 6" x="0.818182" y="0.242424" />
-                        <image-point name="Imagepoint 7" x="0.909091" y="0.5" />
-                        <image-point name="Imagepoint 8" x="0.787879" y="0.772727" />
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="636222976235167" speed="1">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\head0.png">
+                        <image-point name="Imagepoint 1" x="0.5" y="0.875" />
+                        <image-point name="Imagepoint 2" x="0.210938" y="0.804688" />
+                        <image-point name="Imagepoint 3" x="0.109375" y="0.5" />
+                        <image-point name="Imagepoint 4" x="0.226563" y="0.210938" />
+                        <image-point name="Imagepoint 5" x="0.484375" y="0.09375" />
+                        <image-point name="Imagepoint 6" x="0.820313" y="0.242188" />
+                        <image-point name="Imagepoint 7" x="0.90625" y="0.5" />
+                        <image-point name="Imagepoint 8" x="0.789063" y="0.773438" />
+                        <collision-poly>
+                            <point x="0.151515" y="0.151515" />
+                            <point x="0.5" y="0.0151515" />
+                            <point x="0.848485" y="0.151515" />
+                            <point x="0.984848" y="0.5" />
+                            <point x="0.848485" y="0.848485" />
+                            <point x="0.5" y="0.984848" />
+                            <point x="0.151515" y="0.848485" />
+                            <point x="0.0151515" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\head1.png">
+                        <image-point name="Imagepoint 1" x="0.5" y="0.875" />
+                        <image-point name="Imagepoint 2" x="0.210938" y="0.804688" />
+                        <image-point name="Imagepoint 3" x="0.109375" y="0.5" />
+                        <image-point name="Imagepoint 4" x="0.226563" y="0.210938" />
+                        <image-point name="Imagepoint 5" x="0.484375" y="0.09375" />
+                        <image-point name="Imagepoint 6" x="0.820313" y="0.242188" />
+                        <image-point name="Imagepoint 7" x="0.90625" y="0.5" />
+                        <image-point name="Imagepoint 8" x="0.789063" y="0.773438" />
                         <collision-poly>
                             <point x="0.151515" y="0.151515" />
                             <point x="0.5" y="0.0151515" />
@@ -527,17 +548,40 @@
         <object-type name="OctoArm" sid="424051177266853">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="195360367233727" speed="5">
-                    <frame duration="1" hotspotX="0.184211" hotspotY="0.0367965">
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="195360367233727" speed="6">
+                    <frame duration="1" hotspotX="0.804688" hotspotY="0.0488281" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\leg0.png">
                         <collision-poly>
-                            <point x="0.0197368" y="0.11039" />
-                            <point x="0.337719" y="0.0281385" />
-                            <point x="0.39693" y="0.387446" />
-                            <point x="0.557018" y="0.642858" />
-                            <point x="0.835526" y="0.902598" />
-                            <point x="0.96875" y="0.930195" />
-                            <point x="0.781797" y="0.994588" />
-                            <point x="0.307018" y="0.662337" />
+                            <point x="0.677734" y="0.117188" />
+                            <point x="0.767578" y="0.0136719" />
+                            <point x="0.931641" y="0.0683594" />
+                            <point x="0.904297" y="0.716797" />
+                            <point x="0.314453" y="0.761719" />
+                            <point x="0.0625" y="0.894531" />
+                            <point x="0.183594" y="0.701172" />
+                            <point x="0.707031" y="0.554688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.804688" hotspotY="0.0488281" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\leg1.png">
+                        <collision-poly>
+                            <point x="0.220703" y="0.220703" />
+                            <point x="0.5" y="0.0214844" />
+                            <point x="0.923828" y="0.0761719" />
+                            <point x="0.941406" y="0.292969" />
+                            <point x="0.580078" y="0.279297" />
+                            <point x="0.404297" y="0.335938" />
+                            <point x="0.203125" y="0.921875" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.804688" hotspotY="0.0488281" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\leg2.png">
+                        <collision-poly>
+                            <point x="0.230469" y="0.369141" />
+                            <point x="0.521484" y="0.84375" />
+                            <point x="0.734375" y="0.0234375" />
+                            <point x="0.894531" y="0.0859375" />
+                            <point x="0.957031" y="0.626953" />
+                            <point x="0.742188" y="0.902344" />
+                            <point x="0.351563" y="0.914063" />
+                            <point x="0.09375" y="0.667969" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -546,133 +590,70 @@
         <object-type name="OctoArm2" sid="327846901368687">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="440476349097074" speed="5">
-                    <frame duration="1" hotspotX="0.828947" hotspotY="0.034632">
-                        <collision-poly>
-                            <point x="0.605263" y="0.380952" />
-                            <point x="0.682017" y="0.060606" />
-                            <point x="0.980263" y="0.11039" />
-                            <point x="0.802631" y="0.463203" />
-                            <point x="0.339912" y="0.924243" />
-                            <point x="0.0816886" y="0.99026" />
-                            <point x="0.0098684" y="0.876624" />
-                            <point x="0.179825" y="0.898268" />
-                        </collision-poly>
-                    </frame>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="440476349097074" speed="6">
+                    <frame duration="1" hotspotX="0.820313" hotspotY="0.0957031" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\leg2.png" />
+                    <frame duration="1" hotspotX="0.820313" hotspotY="0.0957031" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\leg0.png" />
+                    <frame duration="1" hotspotX="0.820313" hotspotY="0.0957031" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\leg1.png" />
                 </animation>
             </animation-folder>
         </object-type>
         <object-type name="OctoArm3" sid="932219128698070">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="333809288390865" speed="5">
-                    <frame duration="1" hotspotX="0.253102" hotspotY="0.0478261">
-                        <collision-poly>
-                            <point x="0.0719603" y="0.0826087" />
-                            <point x="0.42928" y="0.0304348" />
-                            <point x="0.555831" y="0.476086" />
-                            <point x="0.389578" y="0.793477" />
-                            <point x="0.704715" y="0.778261" />
-                            <point x="0.851117" y="0.360869" />
-                            <point x="0.736972" y="0.926087" />
-                            <point x="0.0868486" y="0.915218" />
-                        </collision-poly>
-                    </frame>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="333809288390865" speed="6">
+                    <frame duration="1" hotspotX="0.814453" hotspotY="0.09375" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\leg1.png" />
+                    <frame duration="1" hotspotX="0.814453" hotspotY="0.09375" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\leg2.png" />
+                    <frame duration="1" hotspotX="0.814453" hotspotY="0.09375" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\leg0.png" />
                 </animation>
             </animation-folder>
         </object-type>
         <object-type name="OctoArm4" sid="348177396468143">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="323206008139283" speed="5">
-                    <frame duration="1" hotspotX="0.764268" hotspotY="0.0456522">
-                        <collision-poly>
-                            <point x="0.531017" y="0.826087" />
-                            <point x="0.476427" y="0.0847826" />
-                            <point x="0.967742" y="0.115217" />
-                            <point x="0.741936" y="0.35" />
-                            <point x="0.918114" y="0.932609" />
-                            <point x="0.476427" y="0.986957" />
-                            <point x="0.158809" y="0.823913" />
-                            <point x="0.104218" y="0.345652" />
-                        </collision-poly>
-                    </frame>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="323206008139283" speed="6">
+                    <frame duration="1" hotspotX="0.804688" hotspotY="0.0703125" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\leg1.png" />
+                    <frame duration="1" hotspotX="0.804688" hotspotY="0.0703125" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\leg0.png" />
+                    <frame duration="1" hotspotX="0.804688" hotspotY="0.0703125" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\leg2.png" />
                 </animation>
             </animation-folder>
         </object-type>
         <object-type name="OctoArm5" sid="751702550805212">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="982325718463739" speed="5">
-                    <frame duration="1" hotspotX="0.649842" hotspotY="0.0576037">
-                        <collision-poly>
-                            <point x="0.684543" y="0.5" />
-                            <point x="0.498423" y="0.00460829" />
-                            <point x="0.883281" y="0.0852535" />
-                            <point x="0.996845" y="0.5" />
-                            <point x="0.801262" y="0.854839" />
-                            <point x="0.498423" y="0.947005" />
-                            <point x="0.167192" y="0.87788" />
-                            <point x="0.00315457" y="0.5" />
-                        </collision-poly>
-                    </frame>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="982325718463739" speed="6">
+                    <frame duration="1" hotspotX="0.818359" hotspotY="0.0859375" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\leg0.png" />
+                    <frame duration="1" hotspotX="0.818359" hotspotY="0.0859375" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\leg2.png" />
+                    <frame duration="1" hotspotX="0.818359" hotspotY="0.0859375" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\leg1.png" />
                 </animation>
             </animation-folder>
         </object-type>
         <object-type name="OctoArm6" sid="507252512612978">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="736128786816866" speed="5">
-                    <frame duration="1" hotspotX="0.205567" hotspotY="0.0514139">
-                        <collision-poly>
-                            <point x="0.0792291" y="0.0771208" />
-                            <point x="0.353319" y="0.0102828" />
-                            <point x="0.329764" y="0.676092" />
-                            <point x="0.520342" y="0.722365" />
-                            <point x="0.875802" y="0.336761" />
-                            <point x="0.464668" y="0.982005" />
-                            <point x="0.211991" y="0.943445" />
-                            <point x="0.00214133" y="0.640103" />
-                        </collision-poly>
-                    </frame>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="736128786816866" speed="6">
+                    <frame duration="1" hotspotX="0.800781" hotspotY="0.0390625" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\leg2.png" />
+                    <frame duration="1" hotspotX="0.800781" hotspotY="0.0390625" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\leg0.png" />
+                    <frame duration="1" hotspotX="0.800781" hotspotY="0.0390625" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\leg1.png" />
                 </animation>
             </animation-folder>
         </object-type>
         <object-type name="OctoArm7" sid="928182693240135">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="588989858042016" speed="5">
-                    <frame duration="1" hotspotX="0.828947" hotspotY="0.034632">
-                        <collision-poly>
-                            <point x="0.605263" y="0.380952" />
-                            <point x="0.682018" y="0.0606061" />
-                            <point x="0.980263" y="0.11039" />
-                            <point x="0.802632" y="0.463203" />
-                            <point x="0.339912" y="0.924242" />
-                            <point x="0.0816886" y="0.99026" />
-                            <point x="0.00986842" y="0.876623" />
-                            <point x="0.179825" y="0.898268" />
-                        </collision-poly>
-                    </frame>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="588989858042016" speed="6">
+                    <frame duration="1" hotspotX="0.8125" hotspotY="0.0722656" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\leg1.png" />
+                    <frame duration="1" hotspotX="0.8125" hotspotY="0.0722656" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\leg2.png" />
+                    <frame duration="1" hotspotX="0.8125" hotspotY="0.0722656" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\leg0.png" />
                 </animation>
             </animation-folder>
         </object-type>
         <object-type name="OctoArm8" sid="667802913004605">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="776202479864203" speed="5">
-                    <frame duration="1" hotspotX="0.205567" hotspotY="0.0514139">
-                        <collision-poly>
-                            <point x="0.0792291" y="0.0771208" />
-                            <point x="0.353319" y="0.0102829" />
-                            <point x="0.329764" y="0.676093" />
-                            <point x="0.520343" y="0.722365" />
-                            <point x="0.875802" y="0.336761" />
-                            <point x="0.464668" y="0.982005" />
-                            <point x="0.211991" y="0.943445" />
-                            <point x="0.00214133" y="0.640103" />
-                        </collision-poly>
-                    </frame>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="776202479864203" speed="6">
+                    <frame duration="1" hotspotX="0.806641" hotspotY="0.0644531" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\leg2.png" />
+                    <frame duration="1" hotspotX="0.806641" hotspotY="0.0644531" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\leg1.png" />
+                    <frame duration="1" hotspotX="0.806641" hotspotY="0.0644531" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\leg0.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1341,6 +1322,65 @@
             </behaviors>
             <texture original-source="C:\Users\Josiah\Desktop\Internship\SpriteFont_NovaMono_Regular_(36)_[0,3,0,0]_27x49.png" />
         </object-type>
+        <object-type name="tapGesture" sid="256399588158490">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="810909165322767">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="354636504165208">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="615966476760192" speed="2">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505882" original-source="C:\Users\david\Downloads\SheepsMeowInternship\OctopusAdventure\ProjectV2\tap0.png">
+                        <collision-poly>
+                            <point x="0.160714" y="0.329412" />
+                            <point x="0.482143" y="0.294118" />
+                            <point x="0.785714" y="0.341176" />
+                            <point x="0.964286" y="0.423529" />
+                            <point x="0.982143" y="0.635294" />
+                            <point x="0.482143" y="0.988235" />
+                            <point x="0.0178571" y="0.611765" />
+                            <point x="0.160714" y="0.423529" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.634409" original-source="C:\Users\david\Downloads\SheepsMeowInternship\OctopusAdventure\ProjectV2\tap1.png">
+                        <collision-poly>
+                            <point x="0.160714" y="0.430108" />
+                            <point x="0.482143" y="0.0967742" />
+                            <point x="0.803571" y="0.430108" />
+                            <point x="0.982143" y="0.516129" />
+                            <point x="0.982143" y="0.709677" />
+                            <point x="0.482143" y="0.989247" />
+                            <point x="0.0178571" y="0.688172" />
+                            <point x="0.160714" y="0.516129" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TutorialText" sid="846629526113122">
+            <plugin id="Spritefont2" />
+            <behaviors>
+                <behavior-type name="Fade" sid="537568007375293">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Josiah\Desktop\Internship\SpriteFont_NovaMono_Regular_(36)_[0,3,0,0]_27x49.png" />
+        </object-type>
+        <object-type name="Tutorial1" sid="756168851030199">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="tutorial" sid="556772262245081" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="614627741486612" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Arms" plugin-id="Sprite" sid="509932088093310">
@@ -1358,12 +1398,16 @@
                 <behavior-type name="Physics" sid="908375989063165">
                     <behavior id="Physics" />
                 </behavior-type>
+                <behavior-type name="Pin" sid="596740495816270">
+                    <behavior id="Pin" />
+                </behavior-type>
             </behaviors>
         </family>
     </families>
     <layout-folder>
         <layout>Hard Level.xml</layout>
         <layout>Normal Level.xml</layout>
+        <layout>Tutorial.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
