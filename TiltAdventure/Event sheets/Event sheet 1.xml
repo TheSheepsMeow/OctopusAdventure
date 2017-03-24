@@ -1183,6 +1183,7 @@
                         <action id="-16" name="Wait" sid="921203662492210" type="System">
                             <param id="0" name="Seconds">1</param>
                         </action>
+                        <action id="-21" name="Reset global variables" sid="663367318891496" type="System" />
                         <action id="-2" name="Go to layout" sid="968664157837584" type="System">
                             <param id="0" name="Layout">Hard Level</param>
                         </action>
