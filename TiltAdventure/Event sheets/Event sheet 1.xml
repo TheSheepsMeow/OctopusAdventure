@@ -103,10 +103,16 @@
                                     </conditions>
                                     <actions>
                                         <action id="-16" name="Wait" sid="874292439009837" type="System">
-                                            <param id="0" name="Seconds">0.05*loopindex(&quot;Bubbles&quot;)</param>
+                                            <param id="0" name="Seconds">0.1*loopindex(&quot;Bubbles&quot;)</param>
                                         </action>
                                         <action id="-16" name="Set opacity" sid="661240968980071" type="PointsUI">
                                             <param id="0" name="Opacity">50</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="396341638341173" type="Audio">
+                                            <param id="0" name="Audio file">UI</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -137,11 +143,21 @@
                         <action id="-15" name="Set visible" sid="712465006919468" type="Start">
                             <param id="0" name="Visibility">0</param>
                         </action>
+                        <action id="-15" name="Set visible" sid="516301047896155" type="backButton">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="439883744297275" type="homeButton">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
                         <action id="-15" name="Set visible" sid="218840315558567" type="Pause">
                             <param id="0" name="Visibility">1</param>
                         </action>
                         <action id="-13" name="Set time scale" sid="168340341820230" type="System">
                             <param id="0" name="Time scale">1.0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="814744622986201" type="Pause">
+                            <param id="0" name="Animation">&quot;Unpaused&quot;</param>
+                            <param id="1" name="From">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -150,6 +166,7 @@
                         <condition id="17" name="On tap object" sid="313158233510649" type="Touch">
                             <param id="0" name="Object">Pause</param>
                         </condition>
+                        <condition id="-9" name="Is visible" sid="628387978723177" type="Pause" />
                     </conditions>
                     <actions>
                         <action id="0" name="Play" sid="100056214499754" type="Audio">
@@ -158,11 +175,21 @@
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
+                        <action id="4" name="Set animation" sid="284058793696571" type="Pause">
+                            <param id="0" name="Animation">&quot;Paused&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="199361251826679" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
                         <action id="-15" name="Set visible" sid="117053933560010" type="Start">
                             <param id="0" name="Visibility">1</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="769791203084688" type="Pause">
-                            <param id="0" name="Visibility">0</param>
+                        <action id="-15" name="Set visible" sid="435442896077845" type="backButton">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="441256867993337" type="homeButton">
+                            <param id="0" name="Visibility">1</param>
                         </action>
                         <action id="11" name="Cancel fullscreen" sid="359486552302079" type="Browser" />
                         <action id="12" name="Vibrate" sid="209078125317291" type="Browser">
@@ -170,6 +197,95 @@
                         </action>
                         <action id="-13" name="Set time scale" sid="268996288717391" type="System">
                             <param id="0" name="Time scale">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="581294590885365">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="903518809412175" type="Touch">
+                            <param id="0" name="Object">backButton</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="140384214612941" type="backButton" />
+                    </conditions>
+                    <actions>
+                        <action id="10" name="Request fullscreen" sid="139042359121842" type="Browser">
+                            <param id="0" name="Mode">2</param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="336012273432150" type="System">
+                            <param id="0" name="Time scale">1.0</param>
+                        </action>
+                        <action id="0" name="Play" sid="440893498021391" type="Audio">
+                            <param id="0" name="Audio file">Start_sound_1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="548064838319915" type="backButton">
+                            <param id="0" name="Animation">&quot;Pressed&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="926461049122702" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="488498579483318" type="System" />
+                        <action id="4" name="Set animation" sid="557921748595569" type="backButton">
+                            <param id="0" name="Animation">&quot;Unpressed&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="653993065244430" type="Start">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="507231623498032" type="backButton">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="678361731102384" type="homeButton">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="906842237101995" type="System">
+                            <param id="0" name="Layout">Tutorial</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="667510734739926">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="206743292538722" type="Touch">
+                            <param id="0" name="Object">homeButton</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="207641939695908" type="homeButton" />
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set time scale" sid="643388860257613" type="System">
+                            <param id="0" name="Time scale">1.0</param>
+                        </action>
+                        <action id="0" name="Play" sid="885550418689384" type="Audio">
+                            <param id="0" name="Audio file">home</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-5</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="290119132470931" type="homeButton">
+                            <param id="0" name="Animation">&quot;Pressed&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="713323709215195" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="490084213750140" type="System" />
+                        <action id="4" name="Set animation" sid="240130477460237" type="homeButton">
+                            <param id="0" name="Animation">&quot;Unpressed&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="274484221068549" type="Start">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="408344214432142" type="backButton">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="627308127753427" type="homeButton">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="723875960843079" type="System">
+                            <param id="0" name="Layout">Title</param>
                         </action>
                     </actions>
                 </event-block>
@@ -223,21 +339,6 @@
                         <action id="-24" name="Move to top" sid="281843177392385" type="Player" />
                     </actions>
                 </event-block>
-                <event-block sid="403228754500310">
-                    <conditions>
-                        <condition id="16" name="Is portrait/landscape" sid="862794863227945" type="Browser">
-                            <param id="0" name="Orientation">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-13" name="Set time scale" sid="280388227736970" type="System">
-                            <param id="0" name="Time scale">0</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="367471997320442" type="Rotate">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="619641978284581">
                     <conditions>
                         <condition id="16" name="Is portrait/landscape" sid="212542651588782" type="Browser">
@@ -260,6 +361,21 @@
                     <actions>
                         <action id="-15" name="Set visible" sid="869622703504455" type="Rotate">
                             <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="121159265047433">
+                    <conditions>
+                        <condition id="16" name="Is portrait/landscape" sid="831515762926753" type="Browser">
+                            <param id="0" name="Orientation">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set time scale" sid="398360069888844" type="System">
+                            <param id="0" name="Time scale">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="148545908345830" type="Rotate">
+                            <param id="0" name="Visibility">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -565,6 +681,11 @@
                                 <condition id="2" inverted="1" name="Is playing" sid="817851207805372" type="ObstacleBlowfish3">
                                     <param id="0" name="Animation">&quot;Destroy&quot;</param>
                                 </condition>
+                                <condition behavior="Physics" id="1" name="Compare velocity" sid="345139342520684" type="Player">
+                                    <param id="0" name="Which">2</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action behavior="ScrollTo" id="0" name="Shake" sid="870469481496093" type="Player">
@@ -573,9 +694,9 @@
                                     <param id="2" name="Mode">0</param>
                                 </action>
                                 <action id="0" name="Play" sid="251519593167397" type="Audio">
-                                    <param id="0" name="Audio file">hitObstacle</param>
+                                    <param id="0" name="Audio file">hitbyFish</param>
                                     <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">-10</param>
+                                    <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                                 <action id="12" name="Vibrate" sid="523939831982524" type="Browser">
@@ -617,6 +738,11 @@
                                 <condition id="2" inverted="1" name="Is playing" sid="354620155127170" type="ObstacleBlowfish1">
                                     <param id="0" name="Animation">&quot;Destroy&quot;</param>
                                 </condition>
+                                <condition behavior="Physics" id="1" name="Compare velocity" sid="523094563525560" type="Player">
+                                    <param id="0" name="Which">2</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action behavior="ScrollTo" id="0" name="Shake" sid="710913111227524" type="Player">
@@ -624,10 +750,10 @@
                                     <param id="1" name="Duration">0.4</param>
                                     <param id="2" name="Mode">0</param>
                                 </action>
-                                <action id="0" name="Play" sid="389945506521967" type="Audio">
-                                    <param id="0" name="Audio file">hitObstacle</param>
+                                <action id="0" name="Play" sid="761517180868831" type="Audio">
+                                    <param id="0" name="Audio file">hitbyFish</param>
                                     <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">-10</param>
+                                    <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                                 <action id="12" name="Vibrate" sid="805522460608628" type="Browser">
@@ -669,6 +795,11 @@
                                 <condition id="2" inverted="1" name="Is playing" sid="509047276740690" type="ObstacleBlowfish2">
                                     <param id="0" name="Animation">&quot;Destroy&quot;</param>
                                 </condition>
+                                <condition behavior="Physics" id="1" name="Compare velocity" sid="669474021035946" type="Player">
+                                    <param id="0" name="Which">2</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action behavior="ScrollTo" id="0" name="Shake" sid="155508362764422" type="Player">
@@ -676,10 +807,10 @@
                                     <param id="1" name="Duration">0.4</param>
                                     <param id="2" name="Mode">0</param>
                                 </action>
-                                <action id="0" name="Play" sid="202049640034083" type="Audio">
-                                    <param id="0" name="Audio file">hitObstacle</param>
+                                <action id="0" name="Play" sid="165707376168457" type="Audio">
+                                    <param id="0" name="Audio file">hitbyFish</param>
                                     <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">-10</param>
+                                    <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                                 <action id="12" name="Vibrate" sid="516595770321360" type="Browser">
@@ -734,6 +865,11 @@
                                 <condition id="2" inverted="1" name="Is playing" sid="470323655325392" type="ObstacleBlowfish3">
                                     <param id="0" name="Animation">&quot;Destroy&quot;</param>
                                 </condition>
+                                <condition behavior="Physics" id="1" name="Compare velocity" sid="538852921196577" type="Player">
+                                    <param id="0" name="Which">2</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action behavior="ScrollTo" id="0" name="Shake" sid="654947661424754" type="Player">
@@ -741,10 +877,10 @@
                                     <param id="1" name="Duration">0.4</param>
                                     <param id="2" name="Mode">0</param>
                                 </action>
-                                <action id="0" name="Play" sid="187669253137649" type="Audio">
-                                    <param id="0" name="Audio file">hitObstacle</param>
+                                <action id="0" name="Play" sid="549480601735811" type="Audio">
+                                    <param id="0" name="Audio file">hitbyFish</param>
                                     <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">-10</param>
+                                    <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                                 <action id="12" name="Vibrate" sid="364546429709575" type="Browser">
@@ -786,6 +922,11 @@
                                 <condition id="2" inverted="1" name="Is playing" sid="984790160454452" type="ObstacleBlowfish1">
                                     <param id="0" name="Animation">&quot;Destroy&quot;</param>
                                 </condition>
+                                <condition behavior="Physics" id="1" name="Compare velocity" sid="865738639075684" type="Player">
+                                    <param id="0" name="Which">2</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action behavior="ScrollTo" id="0" name="Shake" sid="493583956057169" type="Player">
@@ -793,10 +934,10 @@
                                     <param id="1" name="Duration">0.4</param>
                                     <param id="2" name="Mode">0</param>
                                 </action>
-                                <action id="0" name="Play" sid="648924974431878" type="Audio">
-                                    <param id="0" name="Audio file">hitObstacle</param>
+                                <action id="0" name="Play" sid="810062196005258" type="Audio">
+                                    <param id="0" name="Audio file">hitbyFish</param>
                                     <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">-10</param>
+                                    <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                                 <action id="12" name="Vibrate" sid="493125123406166" type="Browser">
@@ -838,6 +979,11 @@
                                 <condition id="2" inverted="1" name="Is playing" sid="568415774814545" type="ObstacleBlowfish2">
                                     <param id="0" name="Animation">&quot;Destroy&quot;</param>
                                 </condition>
+                                <condition behavior="Physics" id="1" name="Compare velocity" sid="124805796053022" type="Player">
+                                    <param id="0" name="Which">2</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action behavior="ScrollTo" id="0" name="Shake" sid="970690976522936" type="Player">
@@ -845,10 +991,10 @@
                                     <param id="1" name="Duration">0.4</param>
                                     <param id="2" name="Mode">0</param>
                                 </action>
-                                <action id="0" name="Play" sid="247687088312068" type="Audio">
-                                    <param id="0" name="Audio file">hitObstacle</param>
+                                <action id="0" name="Play" sid="119829344960356" type="Audio">
+                                    <param id="0" name="Audio file">hitbyFish</param>
                                     <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">-10</param>
+                                    <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                                 <action id="12" name="Vibrate" sid="933156461555650" type="Browser">
@@ -903,12 +1049,17 @@
                                 <condition id="2" inverted="1" name="Is playing" sid="548381039340894" type="ObstacleBlowfish3">
                                     <param id="0" name="Animation">&quot;Destroy&quot;</param>
                                 </condition>
+                                <condition behavior="Physics" id="1" name="Compare velocity" sid="469074578087698" type="Player">
+                                    <param id="0" name="Which">2</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Play" sid="744895534771613" type="Audio">
-                                    <param id="0" name="Audio file">hitObstacle</param>
+                                <action id="0" name="Play" sid="455260869843490" type="Audio">
+                                    <param id="0" name="Audio file">hitbyFish</param>
                                     <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">-10</param>
+                                    <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                                 <action behavior="ScrollTo" id="0" name="Shake" sid="543364991167348" type="Player">
@@ -955,12 +1106,17 @@
                                 <condition id="2" inverted="1" name="Is playing" sid="394316836509736" type="ObstacleBlowfish1">
                                     <param id="0" name="Animation">&quot;Destroy&quot;</param>
                                 </condition>
+                                <condition behavior="Physics" id="1" name="Compare velocity" sid="363632135800400" type="Player">
+                                    <param id="0" name="Which">2</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Play" sid="251306449901013" type="Audio">
-                                    <param id="0" name="Audio file">hitObstacle</param>
+                                <action id="0" name="Play" sid="995183058655149" type="Audio">
+                                    <param id="0" name="Audio file">hitbyFish</param>
                                     <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">-10</param>
+                                    <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                                 <action behavior="ScrollTo" id="0" name="Shake" sid="950183142221408" type="Player">
@@ -1007,12 +1163,17 @@
                                 <condition id="2" inverted="1" name="Is playing" sid="831119250251215" type="ObstacleBlowfish2">
                                     <param id="0" name="Animation">&quot;Destroy&quot;</param>
                                 </condition>
+                                <condition behavior="Physics" id="1" name="Compare velocity" sid="720840093833141" type="Player">
+                                    <param id="0" name="Which">2</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Play" sid="820423347745726" type="Audio">
-                                    <param id="0" name="Audio file">hitObstacle</param>
+                                <action id="0" name="Play" sid="595554567965983" type="Audio">
+                                    <param id="0" name="Audio file">hitbyFish</param>
                                     <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">-10</param>
+                                    <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                                 <action behavior="ScrollTo" id="0" name="Shake" sid="927400313078812" type="Player">

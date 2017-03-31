@@ -12,6 +12,7 @@
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="NinePatch" version="1">9-patch</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
@@ -21,6 +22,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
@@ -36,14 +38,15 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <use-loader-layout>0</use-loader-layout>
+    <first-layout>Loader</first-layout>
+    <use-loader-layout>1</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
         <prop name="Downscaling">Medium quality</prop>
         <prop name="Enable WebGL">On</prop>
         <prop name="Fullscreen in browser">Scale outer</prop>
         <prop name="Fullscreen scaling">High quality</prop>
-        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Loader style">Nothing (not recommended)</prop>
         <prop name="Orientations">Any</prop>
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
@@ -117,16 +120,44 @@
         <object-type name="Start" sid="327143037220950">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="599478061261023" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="1" loop="0" name="Unpressed" pingpong="0" repeatcount="1" repeatto="0" sid="599478061261023" speed="5">
+                    <frame duration="1" hotspotX="0.501124" hotspotY="0.502262" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\Play.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Pressed" pingpong="0" repeatcount="1" repeatto="0" sid="532852686965242" speed="5">
+                    <frame duration="1" hotspotX="0.501124" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
         <object-type name="Pause" sid="776075389783840">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="792713895155359" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="1" loop="0" name="Unpaused" pingpong="0" repeatcount="1" repeatto="0" sid="792713895155359" speed="5">
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.5" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\Pause.png">
+                        <collision-poly>
+                            <point x="0.15493" y="0.144737" />
+                            <point x="0.492958" y="0.0131579" />
+                            <point x="0.84507" y="0.144737" />
+                            <point x="0.985915" y="0.5" />
+                            <point x="0.84507" y="0.855263" />
+                            <point x="0.492958" y="0.986842" />
+                            <point x="0.15493" y="0.855263" />
+                            <point x="0.0140845" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Paused" pingpong="0" repeatcount="1" repeatto="0" sid="653857877972854" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.15493" y="0.144737" />
+                            <point x="0.492958" y="0.0131579" />
+                            <point x="0.84507" y="0.144737" />
+                            <point x="0.985915" y="0.5" />
+                            <point x="0.84507" y="0.855263" />
+                            <point x="0.492958" y="0.986842" />
+                            <point x="0.15493" y="0.855263" />
+                            <point x="0.0140845" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -492,6 +523,11 @@
         </object-type>
         <object-type name="Rotate" sid="843432288304217">
             <plugin id="Spritefont2" />
+            <behaviors>
+                <behavior-type name="Flash" sid="892738617847774">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
             <texture original-source="C:\Users\Josiah\Desktop\Internship\SpriteFont_NovaMono_Regular_(36)_[0,3,0,0]_27x49.png" />
         </object-type>
         <object-type name="PointsUI" sid="392987742989940">
@@ -1395,6 +1431,151 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="volumeButton" sid="560740021089573">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="unmuted" pingpong="0" repeatcount="1" repeatto="0" sid="519647180193652" speed="5">
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.5" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\Volume.png">
+                        <collision-poly>
+                            <point x="0.15493" y="0.144737" />
+                            <point x="0.492958" y="0.0131579" />
+                            <point x="0.84507" y="0.144737" />
+                            <point x="0.985915" y="0.5" />
+                            <point x="0.84507" y="0.855263" />
+                            <point x="0.492958" y="0.986842" />
+                            <point x="0.15493" y="0.855263" />
+                            <point x="0.0140845" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="muted" pingpong="0" repeatcount="1" repeatto="0" sid="467622920254360" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.15493" y="0.144737" />
+                            <point x="0.492958" y="0.0131579" />
+                            <point x="0.84507" y="0.144737" />
+                            <point x="0.985915" y="0.5" />
+                            <point x="0.84507" y="0.855263" />
+                            <point x="0.492958" y="0.986842" />
+                            <point x="0.15493" y="0.855263" />
+                            <point x="0.0140845" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="thesheepsmeow" sid="269184026403822">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="889233016568792" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\sheep0.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Pitchfork\Desktop\sheep1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ad" sid="456792200645919">
+            <plugin id="NinePatch" />
+            <texture />
+        </object-type>
+        <object-type name="Text" sid="160142824394542">
+            <plugin id="Spritefont2" />
+            <texture original-source="C:\Users\Josiah\Desktop\Internship\SpriteFont_NovaMono_Regular_(36)_[0,3,0,0]_27x49.png" />
+        </object-type>
+        <object-type name="homeButton" sid="989345870062118">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Unpressed" pingpong="0" repeatcount="1" repeatto="0" sid="403258288537476" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\Home.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.135135" />
+                            <point x="0.5" y="0.0135135" />
+                            <point x="0.842857" y="0.148649" />
+                            <point x="0.985714" y="0.5" />
+                            <point x="0.857143" y="0.864865" />
+                            <point x="0.5" y="0.986486" />
+                            <point x="0.142857" y="0.864865" />
+                            <point x="0.0142857" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pressed" pingpong="0" repeatcount="1" repeatto="0" sid="163592143896007" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.142857" y="0.135135" />
+                            <point x="0.5" y="0.0135135" />
+                            <point x="0.842857" y="0.148649" />
+                            <point x="0.985714" y="0.5" />
+                            <point x="0.857143" y="0.864865" />
+                            <point x="0.5" y="0.986486" />
+                            <point x="0.142857" y="0.864865" />
+                            <point x="0.0142857" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="backButton" sid="550400768369200">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Unpressed" pingpong="0" repeatcount="1" repeatto="0" sid="148317810563924" speed="5">
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.5" original-source="C:\Users\Josiah\Desktop\Internship\TiltAdventure\Art\back.png">
+                        <collision-poly>
+                            <point x="0.15493" y="0.144737" />
+                            <point x="0.492958" y="0.0131579" />
+                            <point x="0.84507" y="0.144737" />
+                            <point x="0.985915" y="0.5" />
+                            <point x="0.84507" y="0.855263" />
+                            <point x="0.492958" y="0.986842" />
+                            <point x="0.15493" y="0.855263" />
+                            <point x="0.0140845" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pressed" pingpong="0" repeatcount="1" repeatto="0" sid="537872356022999" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.15493" y="0.144737" />
+                            <point x="0.492958" y="0.0131579" />
+                            <point x="0.84507" y="0.144737" />
+                            <point x="0.985915" y="0.5" />
+                            <point x="0.84507" y="0.855263" />
+                            <point x="0.492958" y="0.986842" />
+                            <point x="0.15493" y="0.855263" />
+                            <point x="0.0140845" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Camera" sid="895939561287465">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="882878909531763">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="984402285291723" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bgSheeps" sid="350982786544733">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Pitchfork\Desktop\tilinesheeps.png" />
+        </object-type>
+        <object-type name="loaderProgress" sid="843011838828215">
+            <plugin id="NinePatch" />
+            <texture />
+        </object-type>
+        <object-type name="textTitle" sid="789382456533922">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="textDebug" sid="991345682832088">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
     </object-folder>
     <families>
         <family name="Arms" plugin-id="Sprite" sid="509932088093310">
@@ -1420,10 +1601,12 @@
         <layout>Normal Level.xml</layout>
         <layout>Tutorial.xml</layout>
         <layout>Title.xml</layout>
+        <layout>Loader.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>TitleScreen.xml</event-sheet>
+        <event-sheet>Loader.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="1">
@@ -1462,6 +1645,14 @@
         <file name="pickupBubble.ogg" />
         <file name="popObstacle.m4a" />
         <file name="popObstacle.ogg" />
+        <file name="unmute.m4a" />
+        <file name="unmute.ogg" />
+        <file name="home.m4a" />
+        <file name="home.ogg" />
+        <file name="hitbyFish.m4a" />
+        <file name="hitbyFish.ogg" />
+        <file name="UI.m4a" />
+        <file name="UI.ogg" />
     </sounds-folder>
     <music-folder>
         <file name="bgm.m4a" />
