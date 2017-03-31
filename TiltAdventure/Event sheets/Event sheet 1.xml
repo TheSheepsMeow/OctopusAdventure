@@ -8,26 +8,48 @@
         <variable constant="0" name="Start" sid="715200550954948" static="0" type="number">0</variable>
         <event-group description="" sid="331633773539577" title="Device">
             <sub-events>
-                <event-block sid="204856984286381">
+                <event-block sid="745722230818155">
                     <conditions>
-                        <condition id="17" name="On tap object" sid="104137578783297" type="Touch">
-                            <param id="0" name="Object">Start</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="518755062423248" type="System">
-                            <param id="0" name="Variable">Start</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
+                        <condition id="-2" name="On start of layout" sid="891466541597787" type="System" />
                         <condition id="-19" name="Pick all" sid="660177448843538" type="System">
                             <param id="0" name="Object">Arms</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Play" sid="539860996282025" type="Audio">
-                            <param id="0" name="Audio file">Start_sound_1</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        <action behavior="Physics" id="12" name="Set world gravity" sid="622723792117341" type="Player">
+                            <param id="0" name="Gravity">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="416258072724656" type="OctoArm">
+                            <param id="0" name="Pin to">Player</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="826217593929834" type="OctoArm2">
+                            <param id="0" name="Pin to">Player</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="581327087870464" type="OctoArm3">
+                            <param id="0" name="Pin to">Player</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="675228939358782" type="OctoArm4">
+                            <param id="0" name="Pin to">Player</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="354799581076818" type="OctoArm5">
+                            <param id="0" name="Pin to">Player</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="477977745419352" type="OctoArm6">
+                            <param id="0" name="Pin to">Player</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="807983034549829" type="OctoArm7">
+                            <param id="0" name="Pin to">Player</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="180830540549722" type="OctoArm8">
+                            <param id="0" name="Pin to">Player</param>
+                            <param id="1" name="Mode">1</param>
                         </action>
                         <action id="-4" name="Set position to another object" sid="323126771159135" type="Player">
                             <param id="0" name="Object">PlayerStart</param>
@@ -37,27 +59,20 @@
                             <param id="0" name="Object">PlayerStart</param>
                             <param id="1" name="Image point (optional)">0</param>
                         </action>
+                        <action behavior="Physics" id="24" name="Set prevent rotation" sid="460548301816846" type="Player">
+                            <param id="0" name="Setting">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="162272570119875" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action behavior="Physics" id="24" name="Set prevent rotation" sid="320208973968777" type="Player">
+                            <param id="0" name="Setting">0</param>
+                        </action>
                         <action behavior="ScrollTo" id="1" name="Set enabled" sid="617772752295047" type="Player">
                             <param id="0" name="State">1</param>
                         </action>
-                        <action id="12" name="Vibrate" sid="253857334906064" type="Browser">
-                            <param id="0" name="Pattern">&quot;100&quot;</param>
-                        </action>
-                        <action id="10" name="Request fullscreen" sid="514014402267797" type="Browser">
-                            <param id="0" name="Mode">2</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="856437202103767" type="Start">
-                            <param id="0" name="Visibility">0</param>
-                        </action>
                         <action id="-15" name="Set visible" sid="574097555026446" type="Pause">
                             <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="525480408648416" type="System">
-                            <param id="0" name="Variable">Start</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="302916539771368" type="System">
-                            <param id="0" name="Seconds">1.0</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -105,11 +120,6 @@
                             <param id="0" name="Object">Start</param>
                         </condition>
                         <condition id="-9" name="Is visible" sid="345921108310611" type="Start" />
-                        <condition id="-14" name="Compare variable" sid="739952717899097" type="System">
-                            <param id="0" name="Variable">Start</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
                     </conditions>
                     <actions>
                         <action id="0" name="Play" sid="250290188173562" type="Audio">
@@ -129,10 +139,6 @@
                         </action>
                         <action id="-15" name="Set visible" sid="218840315558567" type="Pause">
                             <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="351795371074461" type="System">
-                            <param id="0" name="Variable">Start</param>
-                            <param id="1" name="Value">1</param>
                         </action>
                         <action id="-13" name="Set time scale" sid="168340341820230" type="System">
                             <param id="0" name="Time scale">1.0</param>
@@ -167,17 +173,35 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="860446388418197">
+                <event-block sid="757847075886683">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="602058514613596" type="Player">
-                            <param id="0" name="Object">wall</param>
+                        <condition id="0" name="On collision with another object" sid="973422663693039" type="Player">
+                            <param id="0" name="Object">wallmap</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="12" name="Vibrate" sid="135107192019127" type="Browser">
+                        <action id="12" name="Vibrate" sid="524815569429999" type="Browser">
                             <param id="0" name="Pattern">&quot;10&quot;</param>
                         </action>
-                        <action id="0" name="Play" sid="458127883523909" type="Audio">
+                        <action id="0" name="Play" sid="659558038677637" type="Audio">
+                            <param id="0" name="Audio file">hitWall</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="380019999771505">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="118571767200769" type="Player">
+                            <param id="0" name="Object">Walls</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="12" name="Vibrate" sid="810002634507292" type="Browser">
+                            <param id="0" name="Pattern">&quot;10&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="830535815026198" type="Audio">
                             <param id="0" name="Audio file">hitWall</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
@@ -258,116 +282,6 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="744344562005802" title="Arms">
-            <sub-events>
-                <event-block sid="308145501059992">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="463863497675047" type="System" />
-                    </conditions>
-                    <actions>
-                        <action disabled="1" id="-9" name="Destroy" sid="119628161876405" type="Player" />
-                        <action behavior="Physics" id="12" name="Set world gravity" sid="438625046397675" type="Player">
-                            <param id="0" name="Gravity">0</param>
-                        </action>
-                        <action behavior="Physics" disabled="1" id="22" name="Create limited revolute joint" sid="835759595171976" type="Player">
-                            <param id="0" name="This image point">1</param>
-                            <param id="1" name="Object">OctoArm6</param>
-                            <param id="2" name="Lower angle">-45</param>
-                            <param id="3" name="Upper angle">225</param>
-                        </action>
-                        <action behavior="Physics" disabled="1" id="22" name="Create limited revolute joint" sid="292357639387262" type="Player">
-                            <param id="0" name="This image point">2</param>
-                            <param id="1" name="Object">OctoArm4</param>
-                            <param id="2" name="Lower angle">-15</param>
-                            <param id="3" name="Upper angle">285</param>
-                        </action>
-                        <action behavior="Physics" disabled="1" id="22" name="Create limited revolute joint" sid="663812596589717" type="Player">
-                            <param id="0" name="This image point">3</param>
-                            <param id="1" name="Object">OctoArm2</param>
-                            <param id="2" name="Lower angle">30</param>
-                            <param id="3" name="Upper angle">330</param>
-                        </action>
-                        <action behavior="Physics" disabled="1" id="22" name="Create limited revolute joint" sid="993319126000405" type="Player">
-                            <param id="0" name="This image point">4</param>
-                            <param id="1" name="Object">OctoArm3</param>
-                            <param id="2" name="Lower angle">60</param>
-                            <param id="3" name="Upper angle">360</param>
-                        </action>
-                        <action behavior="Physics" disabled="1" id="22" name="Create limited revolute joint" sid="153177666456297" type="Player">
-                            <param id="0" name="This image point">5</param>
-                            <param id="1" name="Object">OctoArm5</param>
-                            <param id="2" name="Lower angle">115</param>
-                            <param id="3" name="Upper angle">415</param>
-                        </action>
-                        <action behavior="Physics" disabled="1" id="22" name="Create limited revolute joint" sid="384606982501049" type="Player">
-                            <param id="0" name="This image point">6</param>
-                            <param id="1" name="Object">OctoArm7</param>
-                            <param id="2" name="Lower angle">145</param>
-                            <param id="3" name="Upper angle">445</param>
-                        </action>
-                        <action behavior="Physics" disabled="1" id="22" name="Create limited revolute joint" sid="754829963093294" type="Player">
-                            <param id="0" name="This image point">7</param>
-                            <param id="1" name="Object">OctoArm8</param>
-                            <param id="2" name="Lower angle">180</param>
-                            <param id="3" name="Upper angle">515</param>
-                        </action>
-                        <action behavior="Physics" disabled="1" id="22" name="Create limited revolute joint" sid="736915532516116" type="Player">
-                            <param id="0" name="This image point">8</param>
-                            <param id="1" name="Object">OctoArm</param>
-                            <param id="2" name="Lower angle">225</param>
-                            <param id="3" name="Upper angle">565</param>
-                        </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="434051261427843" type="OctoArm">
-                            <param id="0" name="Pin to">Player</param>
-                            <param id="1" name="Mode">1</param>
-                        </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="869631683501440" type="OctoArm2">
-                            <param id="0" name="Pin to">Player</param>
-                            <param id="1" name="Mode">1</param>
-                        </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="652497710358546" type="OctoArm3">
-                            <param id="0" name="Pin to">Player</param>
-                            <param id="1" name="Mode">1</param>
-                        </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="522189650262009" type="OctoArm4">
-                            <param id="0" name="Pin to">Player</param>
-                            <param id="1" name="Mode">1</param>
-                        </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="921330968215606" type="OctoArm5">
-                            <param id="0" name="Pin to">Player</param>
-                            <param id="1" name="Mode">1</param>
-                        </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="826311059083127" type="OctoArm6">
-                            <param id="0" name="Pin to">Player</param>
-                            <param id="1" name="Mode">1</param>
-                        </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="409646881661470" type="OctoArm7">
-                            <param id="0" name="Pin to">Player</param>
-                            <param id="1" name="Mode">1</param>
-                        </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="848613184563566" type="OctoArm8">
-                            <param id="0" name="Pin to">Player</param>
-                            <param id="1" name="Mode">1</param>
-                        </action>
-                        <action behavior="Physics" id="23" name="Enable/disable collisions" sid="662668033595506" type="Arms">
-                            <param id="0" name="Object">Player</param>
-                            <param id="1" name="State">0</param>
-                        </action>
-                        <action behavior="Physics" id="23" name="Enable/disable collisions" sid="171659086814523" type="Arms">
-                            <param id="0" name="Object">Arms</param>
-                            <param id="1" name="State">0</param>
-                        </action>
-                        <action behavior="Physics" id="23" name="Enable/disable collisions" sid="251907524554196" type="Arms">
-                            <param id="0" name="Object">wall</param>
-                            <param id="1" name="State">0</param>
-                        </action>
-                        <action behavior="ScrollTo" id="1" name="Set enabled" sid="114664582906063" type="Player">
-                            <param id="0" name="State">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
         <event-group description="" sid="787248986515230" title="Obstacles">
             <sub-events>
                 <event-block sid="286356722515672">
@@ -387,7 +301,7 @@
                 <event-block sid="425808234884713">
                     <conditions>
                         <condition id="17" name="On tap object" sid="260897392984006" type="Touch">
-                            <param id="0" name="Object">ObstacleCoral</param>
+                            <param id="0" name="Object">ObstacleBlowfish3</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -398,20 +312,20 @@
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
-                        <action id="4" name="Set animation" sid="129121607673030" type="ObstacleCoral">
+                        <action id="4" name="Set animation" sid="129121607673030" type="ObstacleBlowfish3">
                             <param id="0" name="Animation">&quot;Destroy&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action behavior="Sine" id="0" name="Set active" sid="698758842952687" type="ObstacleCoral">
+                        <action behavior="Sine" id="0" name="Set active" sid="698758842952687" type="ObstacleBlowfish3">
                             <param id="0" name="State">0</param>
                         </action>
                         <action id="-16" name="Wait" sid="432912092649635" type="System">
                             <param id="0" name="Seconds">3.0</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="228152715192382" type="ObstacleCoral">
+                        <action id="-15" name="Set visible" sid="228152715192382" type="ObstacleBlowfish3">
                             <param id="0" name="Visibility">1</param>
                         </action>
-                        <action id="4" name="Set animation" sid="226672694758401" type="ObstacleCoral">
+                        <action id="4" name="Set animation" sid="226672694758401" type="ObstacleBlowfish3">
                             <param id="0" name="Animation">&quot;Spawn&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -419,24 +333,24 @@
                 </event-block>
                 <event-block sid="987861229011145">
                     <conditions>
-                        <condition id="4" name="On finished" sid="205992229331457" type="ObstacleCoral">
+                        <condition id="4" name="On finished" sid="205992229331457" type="ObstacleBlowfish3">
                             <param id="0" name="Animation">&quot;Destroy&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-15" name="Set visible" sid="615393171358995" type="ObstacleCoral">
+                        <action id="-15" name="Set visible" sid="615393171358995" type="ObstacleBlowfish3">
                             <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>
                 </event-block>
                 <event-block sid="775329124281141">
                     <conditions>
-                        <condition id="4" name="On finished" sid="517869454863346" type="ObstacleCoral">
+                        <condition id="4" name="On finished" sid="517869454863346" type="ObstacleBlowfish3">
                             <param id="0" name="Animation">&quot;Spawn&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Sine" id="0" name="Set active" sid="801606925031753" type="ObstacleCoral">
+                        <action behavior="Sine" id="0" name="Set active" sid="801606925031753" type="ObstacleBlowfish3">
                             <param id="0" name="State">1</param>
                         </action>
                     </actions>
@@ -646,9 +560,9 @@
                         <event-block sid="625063490914359">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="305052314591211" type="Player">
-                                    <param id="0" name="Object">ObstacleCoral</param>
+                                    <param id="0" name="Object">ObstacleBlowfish3</param>
                                 </condition>
-                                <condition id="2" inverted="1" name="Is playing" sid="817851207805372" type="ObstacleCoral">
+                                <condition id="2" inverted="1" name="Is playing" sid="817851207805372" type="ObstacleBlowfish3">
                                     <param id="0" name="Animation">&quot;Destroy&quot;</param>
                                 </condition>
                             </conditions>
@@ -682,6 +596,15 @@
                                     <param id="1" name="Image point (optional)">0</param>
                                 </action>
                                 <action behavior="Physics" id="21" name="Set immovable" sid="470541315751267" type="Player">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                                <action behavior="Physics" id="24" name="Set prevent rotation" sid="523631127603756" type="Player">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="946885069037809" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action behavior="Physics" id="24" name="Set prevent rotation" sid="697596346092150" type="Player">
                                     <param id="0" name="Setting">0</param>
                                 </action>
                             </actions>
@@ -727,6 +650,15 @@
                                 <action behavior="Physics" id="21" name="Set immovable" sid="239430661019576" type="Player">
                                     <param id="0" name="Setting">0</param>
                                 </action>
+                                <action behavior="Physics" id="24" name="Set prevent rotation" sid="523657226486361" type="Player">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="202733370883059" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action behavior="Physics" id="24" name="Set prevent rotation" sid="560899148467951" type="Player">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="678613870955635">
@@ -770,6 +702,15 @@
                                 <action behavior="Physics" id="21" name="Set immovable" sid="968579421032336" type="Player">
                                     <param id="0" name="Setting">0</param>
                                 </action>
+                                <action behavior="Physics" id="24" name="Set prevent rotation" sid="829383867674952" type="Player">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="822670885703540" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action behavior="Physics" id="24" name="Set prevent rotation" sid="220913950859826" type="Player">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -788,9 +729,9 @@
                         <event-block sid="136350397031322">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="456322319604806" type="Player">
-                                    <param id="0" name="Object">ObstacleCoral</param>
+                                    <param id="0" name="Object">ObstacleBlowfish3</param>
                                 </condition>
-                                <condition id="2" inverted="1" name="Is playing" sid="470323655325392" type="ObstacleCoral">
+                                <condition id="2" inverted="1" name="Is playing" sid="470323655325392" type="ObstacleBlowfish3">
                                     <param id="0" name="Animation">&quot;Destroy&quot;</param>
                                 </condition>
                             </conditions>
@@ -824,6 +765,15 @@
                                     <param id="1" name="Y">Checkpoint.Y</param>
                                 </action>
                                 <action behavior="Physics" id="21" name="Set immovable" sid="510978093974372" type="Player">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                                <action behavior="Physics" id="24" name="Set prevent rotation" sid="931148214246304" type="Player">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="519509006316300" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action behavior="Physics" id="24" name="Set prevent rotation" sid="688129830428506" type="Player">
                                     <param id="0" name="Setting">0</param>
                                 </action>
                             </actions>
@@ -869,6 +819,15 @@
                                 <action behavior="Physics" id="21" name="Set immovable" sid="144214774218947" type="Player">
                                     <param id="0" name="Setting">0</param>
                                 </action>
+                                <action behavior="Physics" id="24" name="Set prevent rotation" sid="142019786441447" type="Player">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="166187452729879" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action behavior="Physics" id="24" name="Set prevent rotation" sid="497036414972016" type="Player">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="713626402128278">
@@ -912,6 +871,15 @@
                                 <action behavior="Physics" id="21" name="Set immovable" sid="598137645260787" type="Player">
                                     <param id="0" name="Setting">0</param>
                                 </action>
+                                <action behavior="Physics" id="24" name="Set prevent rotation" sid="333682153142032" type="Player">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="299514460873620" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action behavior="Physics" id="24" name="Set prevent rotation" sid="207010763037188" type="Player">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -930,9 +898,9 @@
                         <event-block sid="318863674422939">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="653855103414251" type="Player">
-                                    <param id="0" name="Object">ObstacleCoral</param>
+                                    <param id="0" name="Object">ObstacleBlowfish3</param>
                                 </condition>
-                                <condition id="2" inverted="1" name="Is playing" sid="548381039340894" type="ObstacleCoral">
+                                <condition id="2" inverted="1" name="Is playing" sid="548381039340894" type="ObstacleBlowfish3">
                                     <param id="0" name="Animation">&quot;Destroy&quot;</param>
                                 </condition>
                             </conditions>
@@ -966,6 +934,15 @@
                                     <param id="1" name="Y">Checkpoint2.Y</param>
                                 </action>
                                 <action behavior="Physics" id="21" name="Set immovable" sid="784038551274637" type="Player">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                                <action behavior="Physics" id="24" name="Set prevent rotation" sid="398024366369175" type="Player">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="502094084482641" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action behavior="Physics" id="24" name="Set prevent rotation" sid="660440072109284" type="Player">
                                     <param id="0" name="Setting">0</param>
                                 </action>
                             </actions>
@@ -1011,6 +988,15 @@
                                 <action behavior="Physics" id="21" name="Set immovable" sid="905779878791665" type="Player">
                                     <param id="0" name="Setting">0</param>
                                 </action>
+                                <action behavior="Physics" id="24" name="Set prevent rotation" sid="714427472382761" type="Player">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="872360449477255" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action behavior="Physics" id="24" name="Set prevent rotation" sid="123907786044397" type="Player">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="796698949297382">
@@ -1052,6 +1038,15 @@
                                     <param id="1" name="Y">Checkpoint2.Y</param>
                                 </action>
                                 <action behavior="Physics" id="21" name="Set immovable" sid="147714081398367" type="Player">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                                <action behavior="Physics" id="24" name="Set prevent rotation" sid="306385965860934" type="Player">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="869705234980657" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action behavior="Physics" id="24" name="Set prevent rotation" sid="309066852973595" type="Player">
                                     <param id="0" name="Setting">0</param>
                                 </action>
                             </actions>
@@ -1327,24 +1322,11 @@
                         </action>
                         <action id="-21" name="Reset global variables" sid="161341166536291" type="System" />
                         <action id="-2" name="Go to layout" sid="488947393024076" type="System">
-                            <param id="0" name="Layout">Tutorial</param>
+                            <param id="0" name="Layout">Title</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="452227170122944">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="164340444190438" type="System" />
-            </conditions>
-            <actions>
-                <action id="0" name="Play" sid="654533153956513" type="Audio">
-                    <param id="0" name="Audio file">bgm</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-            </actions>
         </event-block>
     </events>
 </c2eventsheet>
