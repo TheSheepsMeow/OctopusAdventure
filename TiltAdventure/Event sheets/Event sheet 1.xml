@@ -1440,6 +1440,46 @@
                         </action>
                         <action id="-21" name="Reset global variables" sid="206078713628619" type="System" />
                         <action id="-2" name="Go to layout" sid="531864210638408" type="System">
+                            <param id="0" name="Layout">Mid Level</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="745270770954717">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="335086617890353" type="System">
+                    <param id="0" name="First value">LayoutName</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;Mid Level&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="441856927201923">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="474188418038163" type="System">
+                            <param id="0" name="First value">Egg.Count</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="394203207436353" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="472018706794161" type="Complete">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="407865033367984" type="Audio">
+                            <param id="0" name="Audio file">complete</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="785046999133045" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="822961346245218" type="System" />
+                        <action id="-2" name="Go to layout" sid="727341516714153" type="System">
                             <param id="0" name="Layout">Hard Level</param>
                         </action>
                     </actions>

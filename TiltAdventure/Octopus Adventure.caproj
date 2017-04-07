@@ -1630,6 +1630,7 @@
     </families>
     <layout-folder>
         <layout>Hard Level.xml</layout>
+        <layout>Mid Level.xml</layout>
         <layout>Normal Level.xml</layout>
         <layout>Tutorial.xml</layout>
         <layout>Title.xml</layout>
