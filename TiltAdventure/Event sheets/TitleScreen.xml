@@ -33,6 +33,16 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="942252770209586">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="226470220837667" type="System" />
+            </conditions>
+            <actions>
+                <action id="18" name="Lock orientation" sid="500754999170884" type="Browser">
+                    <param id="0" name="Orientation">0</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="824756369080028">
             <conditions>
                 <condition id="17" name="On tap object" sid="779262395752219" type="Touch">

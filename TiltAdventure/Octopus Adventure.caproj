@@ -65,6 +65,9 @@
                 <behavior-type name="ScrollTo" sid="990716179503175">
                     <behavior id="scrollto" />
                 </behavior-type>
+                <behavior-type name="Sine" sid="340089666122487">
+                    <behavior id="Sin" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="636222976235167" speed="1">
@@ -1576,6 +1579,32 @@
             <plugin id="Spritefont2" />
             <texture />
         </object-type>
+        <object-type name="Fade" sid="587340254672058">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="552134820426901">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="776251585355145" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Fade2" sid="707589278336555">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="954441148314144">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="126504406906002" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Arms" plugin-id="Sprite" sid="509932088093310">
@@ -1593,6 +1622,9 @@
                 <behavior-type name="Pin" sid="596740495816270">
                     <behavior id="Pin" />
                 </behavior-type>
+                <behavior-type name="Sine" sid="906174372098592">
+                    <behavior id="Sin" />
+                </behavior-type>
             </behaviors>
         </family>
     </families>
@@ -1601,12 +1633,14 @@
         <layout>Normal Level.xml</layout>
         <layout>Tutorial.xml</layout>
         <layout>Title.xml</layout>
+        <layout>End.xml</layout>
         <layout>Loader.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>TitleScreen.xml</event-sheet>
         <event-sheet>Loader.xml</event-sheet>
+        <event-sheet>Ending.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="1">

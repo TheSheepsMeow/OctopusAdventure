@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Ending</name>
+    <events>
+        <event-block sid="258853927076519">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="386413057197618" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="27" name="Set enabled" sid="947171742933514" type="Player">
+                    <param id="0" name="Mode">0</param>
+                </action>
+                <action behavior="Sine" id="0" name="Set active" sid="348925132173572" type="Player">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Sine" id="0" name="Set active" sid="709373562171228" type="Arms">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="133202461013729" type="homeButton">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="949180770993377" type="backButton">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="269681121668046" type="Complete">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="621926123662209" type="Complete">
+                    <param id="0" name="Text">&quot;You found all of the eggs!&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="103992853073236">
+                    <conditions>
+                        <condition id="-12" name="Repeat" sid="829341244270541" type="System">
+                            <param id="0" name="Count">36</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="509393966922744" type="System">
+                            <param id="0" name="Object to create">Egg</param>
+                            <param id="1" name="Layer">&quot;Background&quot;</param>
+                            <param id="2" name="X">random(20, 300)</param>
+                            <param id="3" name="Y">random(20, 450)</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="738998568331877">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="575639520241222" type="System">
+                                    <param id="0" name="Object">Egg</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="9" name="Set scale" sid="666196670936933" type="Egg">
+                                    <param id="0" name="Scale">random(0.05, 0.15)</param>
+                                </action>
+                                <action behavior="Sine" id="3" name="Set movement" sid="160111318572449" type="Egg">
+                                    <param id="0" name="Movement">1</param>
+                                </action>
+                                <action behavior="Sine" id="5" name="Set cycle position" sid="711539470985662" type="Egg">
+                                    <param id="0" name="Cycle position">random(0,1)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="398117871254018">
+            <conditions>
+                <condition id="16" name="Is portrait/landscape" sid="259922394491306" type="Browser">
+                    <param id="0" name="Orientation">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="350367413725940" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="361209926285050" type="Rotate">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="635993798750883">
+            <conditions>
+                <condition id="16" name="Is portrait/landscape" sid="768742247910415" type="Browser">
+                    <param id="0" name="Orientation">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="704127793105416" type="System">
+                    <param id="0" name="Time scale">1.0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="516776320492070" type="Rotate">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="497132733697748">
+            <conditions>
+                <condition id="17" name="On tap object" sid="853702061091896" type="Touch">
+                    <param id="0" name="Object">backButton</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="342525594397169" type="backButton" />
+            </conditions>
+            <actions>
+                <action id="10" name="Request fullscreen" sid="472831175742332" type="Browser">
+                    <param id="0" name="Mode">2</param>
+                </action>
+                <action id="-13" name="Set time scale" sid="377544854387590" type="System">
+                    <param id="0" name="Time scale">1.0</param>
+                </action>
+                <action id="0" name="Play" sid="154620029020566" type="Audio">
+                    <param id="0" name="Audio file">Start_sound_1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="115658337583431" type="backButton">
+                    <param id="0" name="Animation">&quot;Pressed&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="703262878688590" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-21" name="Reset global variables" sid="241920158904401" type="System" />
+                <action id="4" name="Set animation" sid="377762390846740" type="backButton">
+                    <param id="0" name="Animation">&quot;Unpressed&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="983693539583252" type="Start">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="188053966566024" type="backButton">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="404958326680705" type="homeButton">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="953189134075677" type="System">
+                    <param id="0" name="Layout">Tutorial</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="709432784937077">
+            <conditions>
+                <condition id="17" name="On tap object" sid="921420907410503" type="Touch">
+                    <param id="0" name="Object">homeButton</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="487483692237120" type="homeButton" />
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="806457196616167" type="System">
+                    <param id="0" name="Time scale">1.0</param>
+                </action>
+                <action id="0" name="Play" sid="954248114991348" type="Audio">
+                    <param id="0" name="Audio file">home</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-5</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="182912754020288" type="homeButton">
+                    <param id="0" name="Animation">&quot;Pressed&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="318921512435752" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-21" name="Reset global variables" sid="340604694357478" type="System" />
+                <action id="4" name="Set animation" sid="501383666843316" type="homeButton">
+                    <param id="0" name="Animation">&quot;Unpressed&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="958999276579453" type="Start">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="236828831687974" type="backButton">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="129072622706724" type="homeButton">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="442120480995396" type="System">
+                    <param id="0" name="Layout">Title</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1466,28 +1466,37 @@
                         <condition id="-4" name="Trigger once while true" sid="811847946216082" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-15" name="Set visible" sid="303493190289456" type="Complete">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
                         <action id="0" name="Play" sid="311168562240532" type="Audio">
                             <param id="0" name="Audio file">complete</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
-                        <action id="0" name="Set text" sid="781281902337957" type="Complete">
-                            <param id="0" name="Text">&quot;You found all of the eggs!&quot;</param>
-                        </action>
                         <action id="-16" name="Wait" sid="494538898212999" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="289886573217955" type="Fade2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="786928642990065" type="Fade2" />
+                        <action id="-16" name="Wait" sid="650116754736581" type="System">
                             <param id="0" name="Seconds">1</param>
                         </action>
                         <action id="-21" name="Reset global variables" sid="161341166536291" type="System" />
                         <action id="-2" name="Go to layout" sid="488947393024076" type="System">
-                            <param id="0" name="Layout">Title</param>
+                            <param id="0" name="Layout">End</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="430742655793512">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="286770261216434" type="System" />
+            </conditions>
+            <actions>
+                <action id="-24" name="Move to top" sid="676484623684705" type="Fade2" />
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>
