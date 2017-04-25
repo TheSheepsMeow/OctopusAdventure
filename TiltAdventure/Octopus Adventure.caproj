@@ -2,13 +2,13 @@
 <c2project>
     <name>Octopus Adventure</name>
     <description></description>
-    <version>1.0.0.0</version>
-    <author></author>
-    <author-email></author-email>
-    <author-website>http://</author-website>
+    <version>0.1</version>
+    <author>The Sheep&apos;s Meow</author>
+    <author-email>games@thesheepsmeow.com</author-email>
+    <author-website>http://www.thesheepsmeow.com/html5</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>1qw141g8k9gnj</unique-id>
-    <saved-with-version>23900</saved-with-version>
+    <saved-with-version>24400</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
@@ -41,7 +41,7 @@
     <first-layout>Loader</first-layout>
     <use-loader-layout>1</use-loader-layout>
     <configuration-settings>
-        <prop name="Clear background">Yes</prop>
+        <prop name="Clear background">No</prop>
         <prop name="Downscaling">Medium quality</prop>
         <prop name="Enable WebGL">On</prop>
         <prop name="Fullscreen in browser">Scale outer</prop>
@@ -1602,6 +1602,99 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="126504406906002" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Title_BG" sid="467034574379437">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="728505568403349" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\MEOW\OctopusAdventure\Art\Logo\Title_BG.png">
+                        <collision-poly>
+                            <point x="0.102996" y="0.138191" />
+                            <point x="0.5" y="0.145729" />
+                            <point x="0.859551" y="0.188442" />
+                            <point x="0.93633" y="0.5" />
+                            <point x="0.825843" y="0.766332" />
+                            <point x="0.5" y="0.874372" />
+                            <point x="0.166667" y="0.776382" />
+                            <point x="0.121723" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text2" sid="977443844548000">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="535822448455090" speed="5">
+                    <frame duration="1" hotspotX="0.502591" hotspotY="0.505155" original-source="D:\MEOW\OctopusAdventure\Art\Logo\Text.png">
+                        <collision-poly>
+                            <point x="0.0673575" y="0.134021" />
+                            <point x="0.497409" y="0.0824742" />
+                            <point x="0.917098" y="0.164948" />
+                            <point x="0.979275" y="0.958763" />
+                            <point x="0.497409" y="0.701031" />
+                            <point x="0.015544" y="0.969072" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Octo_NoLegs" sid="698368668898111">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="479670979525072" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504065" original-source="D:\MEOW\OctopusAdventure\Art\Logo\Octo_NoLegs.png">
+                        <collision-poly>
+                            <point x="0.114754" y="0.113821" />
+                            <point x="0.5" y="0.0894309" />
+                            <point x="0.754098" y="0.243902" />
+                            <point x="0.877049" y="0.495935" />
+                            <point x="0.5" y="0.504065" />
+                            <point x="0.5" y="0.739837" />
+                            <point x="0.409836" y="0.593496" />
+                            <point x="0.286885" y="0.495935" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Left_Leg" sid="758080773747323">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="150341365091841" speed="5">
+                    <frame duration="1" hotspotX="0.512195" hotspotY="0.506849" original-source="D:\MEOW\OctopusAdventure\Art\Logo\Left_Leg.png">
+                        <collision-poly>
+                            <point x="0.243902" y="0.136986" />
+                            <point x="0.487805" y="0.0547945" />
+                            <point x="0.951219" y="0.0273973" />
+                            <point x="0.390244" y="0.493151" />
+                            <point x="0.585366" y="0.767123" />
+                            <point x="0.487805" y="0.931507" />
+                            <point x="0.414634" y="0.767123" />
+                            <point x="0.0731707" y="0.493151" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Right_Leg" sid="697110534603215">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="334922424143978" speed="5">
+                    <frame duration="1" hotspotX="0.507463" hotspotY="0.511111" original-source="D:\MEOW\OctopusAdventure\Art\Logo\Right_Leg.png">
+                        <collision-poly>
+                            <point x="0.119403" y="0.177778" />
+                            <point x="0.492537" y="0.0444444" />
+                            <point x="0.865672" y="0.2" />
+                            <point x="0.313433" y="0.488889" />
+                            <point x="0.537313" y="0.311111" />
+                            <point x="0.492537" y="0.311111" />
+                            <point x="0.0447761" y="0.933333" />
+                            <point x="0.0298507" y="0.488889" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>

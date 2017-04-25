@@ -947,6 +947,116 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="Title_BG" uid="335">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>155.250762939</x>
+                        <y>133.422836304</y>
+                        <z>0</z>
+                        <width>271.012573242</width>
+                        <height>201.990631104</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Left_Leg" uid="338">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>43.368621826</x>
+                        <y>118</y>
+                        <z>0</z>
+                        <width>41</width>
+                        <height>73</height>
+                        <depth>0</depth>
+                        <hotspotX>0.51219511</hotspotX>
+                        <hotspotY>0.506849289</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Right_Leg" uid="339">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>115.77645874</x>
+                        <y>55.43422699</y>
+                        <z>0</z>
+                        <width>67</width>
+                        <height>45</height>
+                        <depth>0</depth>
+                        <hotspotX>0.50746268</hotspotX>
+                        <hotspotY>0.51111114</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Octo_NoLegs" uid="337">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>83.315856934</x>
+                        <y>98.026596069</y>
+                        <z>0</z>
+                        <width>122</width>
+                        <height>123</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.504065037</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Text2" uid="336">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>153</x>
+                        <y>121</y>
+                        <z>0</z>
+                        <width>193</width>
+                        <height>97</height>
+                        <depth>0</depth>
+                        <hotspotX>0.502590656</hotspotX>
+                        <hotspotY>0.50515461</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>

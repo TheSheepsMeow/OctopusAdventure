@@ -400,5 +400,19 @@
                 </action>
             </actions>
         </event-block>
+        <comment></comment>
+        <event-block sid="675137851790830">
+            <conditions>
+                <condition id="3" name="On touched object" sid="569699775867663" type="Touch">
+                    <param id="0" name="Object">ad</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Go to URL" sid="704656549375046" type="Browser">
+                    <param id="0" name="URL">&quot;http://www.thesheepsmeow.com/html5&quot;</param>
+                    <param id="1" name="Target">2</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
