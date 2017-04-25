@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">Hard Level</layout>
+        <layout active="1" order="1">Title</layout>
+        <event-sheet order="2">TitleScreen</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1">
+        <family expanded="0" name="Arms" />
+    </families-expanded>
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="1" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/Player/" />
+        <folder expanded="1" path="animation-folder/Start/" />
+        <folder expanded="1" path="animation-folder/Pause/" />
+        <folder expanded="1" path="animation-folder/Egg/" />
+        <folder expanded="1" path="animation-folder/ObstacleBlowfish3/" />
+        <folder expanded="1" path="animation-folder/PlayerStart/" />
+        <folder expanded="1" path="animation-folder/PointsUI/" />
+        <folder expanded="1" path="animation-folder/Checkpoint/" />
+        <folder expanded="1" path="animation-folder/OctoArm/" />
+        <folder expanded="1" path="animation-folder/OctoArm2/" />
+        <folder expanded="1" path="animation-folder/OctoArm3/" />
+        <folder expanded="1" path="animation-folder/OctoArm4/" />
+        <folder expanded="1" path="animation-folder/OctoArm5/" />
+        <folder expanded="1" path="animation-folder/OctoArm6/" />
+        <folder expanded="1" path="animation-folder/OctoArm7/" />
+        <folder expanded="1" path="animation-folder/OctoArm8/" />
+        <folder expanded="1" path="animation-folder/Checkpoint2/" />
+        <folder expanded="1" path="animation-folder/ObstacleBlowfish1/" />
+        <folder expanded="1" path="animation-folder/ObstacleBlowfish2/" />
+        <folder expanded="1" path="animation-folder/tapGesture/" />
+        <folder expanded="1" path="animation-folder/Tutorial1/" />
+        <folder expanded="1" path="animation-folder/color/" />
+        <folder expanded="1" path="animation-folder/volumeButton/" />
+        <folder expanded="1" path="animation-folder/thesheepsmeow/" />
+        <folder expanded="1" path="animation-folder/homeButton/" />
+        <folder expanded="1" path="animation-folder/backButton/" />
+        <folder expanded="1" path="animation-folder/Camera/" />
+        <folder expanded="1" path="animation-folder/Fade/" />
+        <folder expanded="1" path="animation-folder/Fade2/" />
+        <folder expanded="1" path="animation-folder/Title_BG/" />
+        <folder expanded="1" path="animation-folder/Text2/" />
+        <folder expanded="1" path="animation-folder/Octo_NoLegs/" />
+        <folder expanded="1" path="animation-folder/Left_Leg/" />
+        <folder expanded="1" path="animation-folder/Right_Leg/" />
+    </folders-expanded>
+</c2uistate>
