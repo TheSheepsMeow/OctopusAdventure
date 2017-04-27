@@ -1364,6 +1364,130 @@
                         <action behavior="Fade" id="0" name="Restart fade" sid="703440554461064" type="TutorialText" />
                     </actions>
                 </event-block>
+                <event-block sid="981841617678238">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="289145738503233" type="Tutorial1">
+                            <param id="0" name="Instance variable">tutorial</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="500054316098530">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="877761215481676" type="Player">
+                                    <param id="0" name="Object">ObstacleBlowfish1</param>
+                                </condition>
+                                <condition id="2" inverted="1" name="Is playing" sid="604974831996121" type="ObstacleBlowfish1">
+                                    <param id="0" name="Animation">&quot;Destroy&quot;</param>
+                                </condition>
+                                <condition behavior="Physics" id="1" name="Compare velocity" sid="272646979719406" type="Player">
+                                    <param id="0" name="Which">2</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="ScrollTo" id="0" name="Shake" sid="306974449641848" type="Player">
+                                    <param id="0" name="Magnitude">40</param>
+                                    <param id="1" name="Duration">0.4</param>
+                                    <param id="2" name="Mode">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="465167216988440" type="Audio">
+                                    <param id="0" name="Audio file">hitbyFish</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="12" name="Vibrate" sid="444240745928802" type="Browser">
+                                    <param id="0" name="Pattern">&quot;400&quot;</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="525688245167982" type="Player">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="879982139486469" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="860377503553589" type="Player">
+                                    <param id="0" name="X">Tutorial1.X</param>
+                                    <param id="1" name="Y">Tutorial1.Y</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="348275355661848" type="Arms">
+                                    <param id="0" name="X">Tutorial1.X</param>
+                                    <param id="1" name="Y">Tutorial1.Y</param>
+                                </action>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="700124851082541" type="Player">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                                <action behavior="Physics" id="24" name="Set prevent rotation" sid="453784836596533" type="Player">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="232733148921762" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action behavior="Physics" id="24" name="Set prevent rotation" sid="130717658765110" type="Player">
+                                    <param id="0" name="Setting">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="646498287613014">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="803477632578844" type="Player">
+                            <param id="0" name="Object">ObstacleBlowfish3</param>
+                        </condition>
+                        <condition id="2" inverted="1" name="Is playing" sid="857168939029087" type="ObstacleBlowfish3">
+                            <param id="0" name="Animation">&quot;Destroy&quot;</param>
+                        </condition>
+                        <condition behavior="Physics" id="1" name="Compare velocity" sid="867787550923340" type="Player">
+                            <param id="0" name="Which">2</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="ScrollTo" id="0" name="Shake" sid="588263109080751" type="Player">
+                            <param id="0" name="Magnitude">40</param>
+                            <param id="1" name="Duration">0.4</param>
+                            <param id="2" name="Mode">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="425021261042927" type="Audio">
+                            <param id="0" name="Audio file">hitbyFish</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="12" name="Vibrate" sid="362184846563281" type="Browser">
+                            <param id="0" name="Pattern">&quot;400&quot;</param>
+                        </action>
+                        <action behavior="Physics" id="21" name="Set immovable" sid="938298131930642" type="Player">
+                            <param id="0" name="Setting">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="993229018692129" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="715608737648347" type="Player">
+                            <param id="0" name="X">PlayerStart.X</param>
+                            <param id="1" name="Y">PlayerStart.Y</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="221355382723286" type="Arms">
+                            <param id="0" name="Object">PlayerStart</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                        <action behavior="Physics" id="21" name="Set immovable" sid="870809461578982" type="Player">
+                            <param id="0" name="Setting">0</param>
+                        </action>
+                        <action behavior="Physics" id="24" name="Set prevent rotation" sid="746561860939254" type="Player">
+                            <param id="0" name="Setting">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="923931957816335" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action behavior="Physics" id="24" name="Set prevent rotation" sid="638023943947278" type="Player">
+                            <param id="0" name="Setting">0</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-block sid="276928454922809">
